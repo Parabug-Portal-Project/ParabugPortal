@@ -25,7 +25,7 @@ $(document).ready(function () {
     
     // TODO: Add Logout functionality once Login is implemented
     $("footer .customerLogOutButton").on("click", function(e){
-        window.location = "index.html";
+        window.location = "index.php";
     });
     //*********************************************************************
 });
