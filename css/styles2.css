@@ -1,0 +1,166 @@
+header, main {
+    text-align: center;
+}
+body{
+    font-family: Arial;
+    font-size: 16px;
+    font-style: bold;
+}
+
+.logo {
+    position: absolute;
+    top: 8px;
+    right: 2px;
+}
+
+.logo img {
+    max-width: 20%;
+    height: auto;
+}
+
+/***************************************************/
+/* Customer Styling*/
+
+.menuHeader {
+    text-align: center;
+    font-size: 170%;
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+}
+
+.menuHeader2 {
+    text-align: center;
+    font-size: 170%;
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+   width: 500px;
+    padding: 10px;
+}
+
+.historyHeader {
+    color: black;
+    background-color: #34e5eb;
+    text-align: center;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 32px;
+    font-size: 18px;
+}
+
+.customerFooter {
+    text-align: center;
+    /*vertical-align: bottom;*/
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logoutDiv {
+    width: 200px;
+    height: 200px;
+    padding: 2%;
+    /*display: table-cell;*/
+    text-align: center;
+    vertical-align: bottom;
+    bottom: 0px;
+}
+
+.customerMenu{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.customerMenuLayout {
+    height: 80px;
+}
+
+.ph,.pi,.ps,.pe,.plo {
+    border-radius: 4px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+}
+
+
+.ph {
+    background-color: #34e5eb;
+}
+
+
+
+.ph:hover {
+    transition-duration: .4s;
+    background-color: white;
+    border: 2px solid black;
+}
+
+
+.pe {
+    background-color: #ff9100;
+}
+
+.pe:hover {
+    transition-duration: .4s;
+    background-color: white;
+    border: 2px solid black;
+}
+
+
+.ps {
+    background-color: #ede54e;
+}
+
+.ps:hover {
+    transition-duration: .4s;
+    background-color: white;
+    border: 2px solid black;
+}
+
+
+.pi {
+    background-color: #00a608;
+}
+
+.pi:hover {
+    transition-duration: .4s;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.plo {
+    background-color: white;
+    border: 2px solid black;
+    
+}
+
+.plo:hover {
+    transition-duration: .4s;
+    background-color: black;
+    color: white;
+}
+
+
+.in{
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid black;
+  font-size: 16px;
+}
+
+.uv{
+    width: 100%;
+    text-align: left;
+}
+
+/***************************************************/

@@ -1,0 +1,123 @@
+eader, main {
+    text-align: center;
+}
+.logo {
+    position: absolute;
+    top: 8px;
+    right: 2px;
+}
+.logo img {
+    max-width: 20%;
+    height: auto;
+}
+/***************************************************/
+/* Main Menu Styling*/
+.mainMenuHeader {
+    text-align: center;
+    font-size: 250%;
+    padding: 100px;
+}
+.mainMenuButtons {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+/***************************************************/
+/***************************************************/
+/* Customer Styling*/
+.menuHeader {
+    text-align: center;
+    font-size: 170%;
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+}
+.historyHeader, .scheduleHeader {
+    color: black;
+    text-align: center;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 32px;
+    font-size: 18px;
+}
+.customerFooter {
+    text-align: center;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 10px;
+}
+.customerMenu{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.customerMenuLayout {
+    height: 80px;
+}
+.customerHistoryButton, .customerScheduleButton, .estimatorButton, .customerFeedbackButton, .customerContactButton, .customerLogOutButton {
+    border-radius: 4px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+}
+.customerHistoryButton, .historyHeader {
+    background-color: #34e5eb;
+}
+.customerHistoryButton:hover {
+    transition-duration: .4s;
+    background-color: white;
+    border: 2px solid black;
+}
+.customerScheduleButton, .scheduleHeader{
+    background-color: #92f08d;
+}
+.customerScheduleButton:hover {
+    transition-duration: .4s;
+    background-color: white;
+    border: 2px solid black;
+}
+.estimatorButton{
+    background-color: #ff9100;
+}
+.estimatorButton:hover {
+    transition-duration: .4s;
+    background-color: white;
+    border: 2px solid black;
+}
+.customerFeedbackButton {
+    background-color: #ede54e;
+}
+.customerFeedbackButton:hover {
+    transition-duration: .4s;
+    background-color: white;
+    border: 2px solid black;
+}
+.customerContactButton {
+    background-color: #00a608;
+}
+.customerContactButton:hover {
+    transition-duration: .4s;
+    background-color: white;
+    border: 2px solid black;
+}
+.customerLogOutButton, .customerLoginButton, .pilotLoginButton {
+    background-color: white;
+    border: 2px solid black;
+    display: table-cell;
+    vertical-align: bottom;
+}
+.customerLogOutButton:hover, .customerLoginButton:hover, .pilotLoginButton:hover {
+    transition-duration: .4s;
+    background-color: black;
+    color: white;
+}
+/***************************************************/
