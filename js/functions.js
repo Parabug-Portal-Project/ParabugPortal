@@ -2,7 +2,7 @@ $(document).ready(function () {
     console.log("Runnning on Ready");
     
     
-    $("main .customerLoginButton").on("click", function(e) {
+    $("main .loginButtons .customerLoginButton").on("click", function(e) {
         window.location = "customerLogin.html";
     });
     
