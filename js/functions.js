@@ -1,6 +1,11 @@
 $(document).ready(function () {
     console.log("Runnning on Ready");
     
+    
+    $("main customerLoginButton").on("click", function(e) {
+        window.location = "customerLogin.html";
+    });
+    
     //*********************************************************************
     // Functions for the customer section
     $("main .customerHistoryButton").on("click", function(e) {
