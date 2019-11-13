@@ -36,7 +36,7 @@ eader, main {
     width: 50px;
     padding: 10px;
 }
-.historyHeader, .scheduleHeader {
+.historyHeader, .scheduleHeader, .feedbackHeader {
     color: black;
     text-align: center;
     border-radius: 4px;
@@ -60,7 +60,7 @@ eader, main {
 .customerMenuLayout {
     height: 80px;
 }
-.customerHistoryButton, .customerScheduleButton, .estimatorButton, .customerFeedbackButton, .customerContactButton, .customerLogOutButton {
+.customerHistoryButton, .customerScheduleButton, .estimatorButton, .customerFeedbackButton, .customerContactButton, .customerLogOutButton, .feedbackSubmitButton {
     border-radius: 4px;
     color: black;
     padding: 15px 32px;
@@ -93,7 +93,7 @@ eader, main {
     background-color: white;
     border: 2px solid black;
 }
-.customerFeedbackButton {
+.customerFeedbackButton, .feedbackHeader {
     background-color: #ede54e;
 }
 .customerFeedbackButton:hover {
@@ -109,15 +109,62 @@ eader, main {
     background-color: white;
     border: 2px solid black;
 }
-.customerLogOutButton, .customerLoginButton, .pilotLoginButton {
+.customerLogOutButton, .customerLoginButton, .pilotLoginButton, feedbackSubmitButton {
     background-color: white;
     border: 2px solid black;
     display: table-cell;
     vertical-align: bottom;
 }
-.customerLogOutButton:hover, .customerLoginButton:hover, .pilotLoginButton:hover {
+.customerLogOutButton:hover, .customerLoginButton:hover, .pilotLoginButton:hover, .feedbackSubmitButton:hover {
     transition-duration: .4s;
     background-color: black;
     color: white;
 }
+
+.feedbackForm {
+    font-size: large;
+    font-weight: bold;
+}
+
+.feedbackForm .yesno {
+    list-style-type: none;
+    margin: 25px 0 0 0;
+    padding: 0;
+}
+
+.feedbackForm .yesno li{
+    width: 100px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feedbackForm .yesno li input, .feedbackForm .yesno li label{
+    display: block;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    
+}
+
+.feedbackForm .yesno li input[type="radio"] {
+  /*opacity: 0.01;*/
+  /*z-index: 100;*/
+}
+
+.feedbackForm .yesno li input[type="radio"]:checked+label{
+    background: yellow;
+}
+
+.feedbackForm .yesno li label {
+  padding: 5px;
+  border: 1px solid #CCC;
+  cursor: pointer;
+  z-index: 90;
+  /*-webkit-appearance: button;*/
+}
+
+.feedbackForm .yesno li label:hover {
+    background: #DDD;
+}
+
 /***************************************************/

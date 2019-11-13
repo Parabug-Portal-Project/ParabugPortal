@@ -7,29 +7,52 @@
     </head>
     <body>
 
-        <header>Feedback</header>
+        <header>
+            <table class="menuHeader">
+                <tr><td><strong>Customer Portal</strong></td></tr>
+                <!--Ignore this-->
+            </table>
+            <br/> <br/>
+            <table class="feedbackHeader">
+                <tr>
+                    <td><strong>FEEDBACK</strong></td>
+                </tr>
+            </table>
+            <div class="logo">
+                <img src="img/Parabug-Logo.png"></img>
+            </div>
+        </header>
 
-        <body>
-            <form>
-                <div class="rate"><p>How was your experience?</p><!-- Probably add stuff here--></div>
-            
-            
+        <main>
+            <form class="feedbackForm">
+                <div class="rate">
+                    <p>How was your experience?</p>
+                    <!-- Probably add stuff here-->
+                </div>
                 <div class="onTime">
                     <p>Did the operator show up on time?</p>
-                    <div><input class="yesno" type="radio" name="yesno" value="yes"><label for="yes">Yes</label></div>
-                    <div><input class="yesno" type="radio" name="yesno" value="no" ><label for="no" >No </label></div>
+                    <ul class="yesno">
+                        <li>
+                            <input type="radio" name="yesno" value="yes">
+                            <label for="yes">Yes</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="yesno" value="no">
+                            <label for="no" >No </label>
+                        </li>
+                    </ul>
                 </div>
                 
                 
                 <div class="improve">
                     <p>How can we improve?</p>
-                    <textarea class="misc" name="message" rows="10" cols="30"></textarea>
+                    <textarea class="misc" name="message" rows="15" cols="70">Type suggestions here</textarea>
                 </div>
-                
-                <input type="submit" value="Submit"/>
+                <br/>
+                <input type="submit" value="Submit" class="feedbackSubmitButton"/>
             </form>
            
-        </body>
+        </main>
 
     </body>
 </html>

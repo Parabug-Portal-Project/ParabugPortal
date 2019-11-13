@@ -30,7 +30,19 @@ $(document).ready(function () {
     
     // TODO: Add Logout functionality once Login is implemented
     $("footer .customerLogOutButton").on("click", function(e){
-        window.location = "index.php";
+        window.location = "index.html";
     });
+    
+    // TODO: Add Login functionality with passowrd protection
+    // TODO: Check if user is in the Database
+    $(".loginCredentials").submit(function(e){
+        e.preventDefault();
+    });
+    
+    // Temporary function
+    $("main .loginButton").on("click", function(e) {
+        window.location = "customerHome.html";
+    });
+    
     //*********************************************************************
 });
