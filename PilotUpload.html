@@ -21,7 +21,7 @@
                 <!--Ignore this-->
                 <tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
                 
-                <tr><td class="customerMenuLayout"><button class="pi"><strong>UPLOAD PHOTOS/VIDEO</strong></button></td></tr>
+                <tr><td class="customerMenuLayout"><button class="pi" id="upload"><strong>UPLOAD PHOTOS/VIDEO</strong></button></td></tr>
                 <tr><td class="customerMenuLayout"><button class="ph"><strong>VIEW PHOTOS/VIDEO</strong></button></td></tr>
 
             </table>
@@ -33,5 +33,12 @@
                 <button class="plo"><strong>LOG OUT</strong></button>
             </div>
         </footer>
+        
+         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+           <script>
+         $("#upload").on("click", function(e) {
+            window.location = "PilotUploadVideo.html";
+        });
+        </script>
     </body>
 </html>

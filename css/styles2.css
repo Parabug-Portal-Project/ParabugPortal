@@ -32,6 +32,17 @@ body{
     padding: 10px;
 }
 
+.Job_History{
+    text-align: center;
+    font-size: 100%;
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    padding: 10px;
+}
+
+
 .menuHeader2 {
     text-align: center;
     font-size: 170%;
@@ -81,7 +92,7 @@ body{
     height: 80px;
 }
 
-.ph,.pi,.ps,.pe,.plo {
+.ph,.pi,.ps,.pe,.plo,.piStandard,.phStandard,.psStandard {
     border-radius: 4px;
     color: black;
     padding: 15px 32px;
@@ -92,7 +103,7 @@ body{
 }
 
 
-.ph {
+.ph,.phStandard {
     background-color: #34e5eb;
 }
 
@@ -116,7 +127,7 @@ body{
 }
 
 
-.ps {
+.ps, .psStandard {
     background-color: #ede54e;
 }
 
@@ -127,7 +138,7 @@ body{
 }
 
 
-.pi {
+.pi,.piStandard {
     background-color: #00a608;
 }
 
