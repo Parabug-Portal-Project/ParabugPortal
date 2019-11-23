@@ -20,7 +20,7 @@
            <script>
             $(document).ready(function() {
                 $.ajax({
-                    type: "POST",
+                    type: "GET",
                     url: "insert.php",
                     dataType: "json",
                     data: {
