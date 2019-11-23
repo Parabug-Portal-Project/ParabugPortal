@@ -14,17 +14,24 @@
                 <input type="submit" value="Submit"/>
             </form>
         </main>
-    </body>
-    
-    <script>
-        $.ajax({
-            type: "GET",
-            url: "insert.php",
-            dataType: "json",
-            data: {
-            
-            },
-            success: function(data, status) {}
-        }); ///end of ajax cal
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+           <script>
+            $(document).ready(function() {
+                $.ajax({
+                    type: "POST",
+                    url: "insert.php",
+                    dataType: "json",
+                    data: {
+                    
+                    },
+                    success: function(data, status) {
+                        console.log("It works...")
+                    }
+                }); ///end of ajax cal
+            });
     </script>
+    </body>
+ 
 </html>
