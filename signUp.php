@@ -15,7 +15,7 @@
             </form>
         </main>
         
-        
+        <div class ="hi"> </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
            <script>
             $(document).ready(function() {
@@ -40,7 +40,7 @@
                     },
                     success: function(data, status) {
                              data.forEach(function(key){
-                            console.log(key)
+                            $(".hi").write(key)
                         });
                     }
                 }); ///end of ajax cal
