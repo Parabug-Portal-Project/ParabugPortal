@@ -30,6 +30,20 @@
                         console.log("It works...")
                     }
                 }); ///end of ajax cal
+                
+                $.ajax({
+                    type: "GET",
+                    url: "send.php",
+                    dataType: "json",
+                    data: {
+                    
+                    },
+                    success: function(data, status) {
+                             data.forEach(function(key){
+                            console.log(key)
+                        });
+                    }
+                }); ///end of ajax cal
             });
     </script>
     </body>
