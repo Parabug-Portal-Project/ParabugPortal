@@ -40,7 +40,7 @@
                     },
                     success: function(data, status) {
                              data.forEach(function(key){
-                            $(".hi").write(key)
+                            $(".hi").append(key)
                         });
                     }
                 }); ///end of ajax cal
