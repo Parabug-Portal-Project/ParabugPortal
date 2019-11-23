@@ -1,8 +1,7 @@
 <?php
-function getDatabaseConnection($dbname = 'tcp'){
+function getDatabaseConnection($dbname = 'heroku_68533dd666c4a97'){
     
     $host = 'localhost';//cloud 9
-    //$dbname = 'tcp';
     $username = 'root';
     $password = '';
     

@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+ <?php
+?>
 <html>
     <head>
         <title> Parabug Portal</title>

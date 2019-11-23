@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<?php
+?>
+
 <html>
     <head>
         <title> Pilot Job History </title>
