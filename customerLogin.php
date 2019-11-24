@@ -6,7 +6,7 @@ session_start();
     include 'dbConnection.php';
     $conn = getDatabaseConnection("heroku_68533dd666c4a97");
     $username = $_POST['username'];
-    $password = sha1($_POST['password']);
+    $password = $_POST['password'];
     $sql = "SELECT * FROM customer
                  WHERE cuUsername = :username
                  AND  cuPassword = :password";                 
