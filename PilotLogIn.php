@@ -2,17 +2,17 @@
 session_start();
  
   if(isset($_POST['login'])){
-    console.log("i made it");
+    
     include 'dbConnection.php';
     $conn = getDatabaseConnection("heroku_68533dd666c4a97");
-    $username = $_POST['opUsername'];
-    $password = sha1($_POST['opPassword']);
+    $username = $_POST['username'];
+    $password = sha1($_POST['password']);
     $sql = "SELECT * FROM operator
-                 WHERE username = :opUsername
-                 AND  password = :opPassword";                 
+                 WHERE opUsername = :username
+                 AND  oPpassword = :password";                 
     $port = array();
-    $port[':opUsername'] = $username;
-    $port[':opPassword'] = $password;
+    $port[':username'] = $username;
+    $port[':password'] = $password;
     $stmt = $conn->prepare($sql);
     $stmt->execute($port);
     $record = $stmt->fetch(PDO::FETCH_ASSOC); //we're expecting just one record
@@ -25,7 +25,7 @@ session_start();
    
    //$_SESSION['adminFullName'] = $record['firstName'] .  "   "  . $record['lastName'];
    //changed here because we are not sure why it's here.
-   header('Location: PilotHome.php'); //redirects to another program
+   header('Location: PilotLogIn.php'); //redirects to another program
     
   }
  }
