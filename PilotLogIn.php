@@ -17,15 +17,8 @@ session_start();
     $stmt->execute($port);
     $record = $stmt->fetch(PDO::FETCH_ASSOC); //we're expecting just one record
     if (empty($record)) {
-    
-    
-    echo "<div class='alert alert-warning' role='alert'>";
-    echo "</br></br></br>Wrong username or password!" ;
-    echo "</div>";
-    
-    echo " <div class = 'errorMessage'> ";
-    echo "</br></br></br>Wrong username or password!" ;
-    echo "</div>";
+    $_SESSION['wrongPass']="<div class='alert alert-danger'><strong>Password Issue! </strong>Wrong username or password!</div>"; //<div class='alert alert-danger'><strong>Password Issue! </strong>Wrong username or password!
+
     } else {
    
    //$_SESSION['adminFullName'] = $record['firstName'] .  "   "  . $record['lastName'];
@@ -58,6 +51,14 @@ session_start();
           Password:  <input type="password" name="password"/> <br><br>
           <input type="submit" value="Login" name = "login" id="b1">
         </form>
+        <?php
+        session_start();
+        if(isset($_SESSION['wrongPass']))
+        {
+            echo $_SESSION['wrongPass'];
+            unset($_SESSION['wrongPass']);
+        }
+?>
     </body>
 </html>
 
