@@ -2,6 +2,7 @@
 session_start();
  
   if(isset($_POST['login'])){
+    console.log("i made it");
     include 'dbConnection.php';
     $conn = getDatabaseConnection("heroku_68533dd666c4a97");
     $username = $_POST['opUsername'];
