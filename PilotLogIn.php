@@ -25,7 +25,7 @@ session_start();
    
    //$_SESSION['adminFullName'] = $record['firstName'] .  "   "  . $record['lastName'];
    //changed here because we are not sure why it's here.
-   header('Location: PilotLogIn.php'); //redirects to another program
+   header('Location: PilotHome.php'); //redirects to another program
     
   }
  }
