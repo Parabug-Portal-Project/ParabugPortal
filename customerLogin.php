@@ -1,35 +1,64 @@
-<?php?>
+<?php
+session_start();
+ 
+  if(isset($_POST['login'])){
+    
+    include 'dbConnection.php';
+    $conn = getDatabaseConnection("heroku_68533dd666c4a97");
+    $username = $_POST['username'];
+    $password = sha1($_POST['password']);
+    $sql = "SELECT * FROM customer
+                 WHERE cuUsername = :username
+                 AND  cuPassword = :password";                 
+    $port = array();
+    $port[':username'] = $username;
+    $port[':password'] = $password;
+    $stmt = $conn->prepare($sql);
+    $stmt->execute($port);
+    $record = $stmt->fetch(PDO::FETCH_ASSOC); //we're expecting just one record
+    if (empty($record)) {
+    $_SESSION['wrongPass']="<div class='alert alert-danger'><strong>Password Issue! </strong>Wrong username or password!</div>"; //<div class='alert alert-danger'><strong>Password Issue! </strong>Wrong username or password!
+
+    } else {
+   
+   //$_SESSION['adminFullName'] = $record['firstName'] .  "   "  . $record['lastName'];
+   //changed here because we are not sure why it's here.
+   header('Location: CustomerHome.php'); //redirects to another program
+    
+  }
+ }
+?>
+
+<!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8" />
-        <title> Parabug Portal </title>
-        <link href="css/styles.css" rel="stylesheet" type="text/css" />
+        <title> Customer Login </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
     </head>
-    
-    <body>
-
         <header>
-            <table class="menuHeader">
-                <tr><td><strong>Customer Login</strong></td></tr>
-            </table>
-            <br/> <br/>
-            <div class="logo">
-                <img src="img/Parabug-Logo.png"></img>
-            </div>
-        </header>
 
-        <main>
-            <form method="post" class="loginCredentials">
-                <div><label>Username: </label><input type="text" class="username" name="username"/></div>
-                <div><label>Password: </label><input type="text" class="password" name="password"/></div>
-                <!--<div><input type="submit" class="loginButton" value="Submit"/></div>-->
-            </form>
-            <button class="loginButton"><strong>SIGN IN</strong></button>
+     <h1> Customer Login </h1>
+   
+     </header>
+    <body >
 
-        </main>
-
-        
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <script src="js/functions.js"></script>
+        <form method="post">
+          Username:  <input type="text" name="username"/> <br><br>
+          Password:  <input type="password" name="password"/> <br><br>
+          <input type="submit" value="Login" name = "login" id="b1">
+        </form>
+        <?php
+        session_start();
+        if(isset($_SESSION['wrongPass']))
+        {
+            echo $_SESSION['wrongPass'];
+            unset($_SESSION['wrongPass']);
+        }
+?>
     </body>
 </html>
+
