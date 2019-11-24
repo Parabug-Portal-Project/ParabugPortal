@@ -18,6 +18,11 @@ session_start();
     $record = $stmt->fetch(PDO::FETCH_ASSOC); //we're expecting just one record
     if (empty($record)) {
     
+    
+    echo "<div class='alert alert-warning' role='alert'>";
+    echo "</br></br></br>Wrong username or password!" ;
+    echo "</div>";
+    
     echo " <div class = 'errorMessage'> ";
     echo "</br></br></br>Wrong username or password!" ;
     echo "</div>";
