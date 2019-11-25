@@ -5,7 +5,7 @@ $(document).ready(function () {
         window.location = "PilotLogIn.php";
     });   
     $("main .loginButtons .adminLoginButton").on("click", function(e) {
-        window.location = "AdminLogin.php";
+        window.location = "adminLogin.php";
     }); 
     $("main .loginButtons .customerLoginButton").on("click", function(e) {
         window.location = "customerLogin.php";
