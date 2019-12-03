@@ -1,4 +1,19 @@
 <?php
+
+include 'dbConnection.php';
+    $conn = getDatabaseConnection("heroku_68533dd666c4a97");
+ { 
+     global $dbConn;
+     
+     $sql = "SELECT * FROM job ORDER BY date";
+     $stmt = $dbConn->prepare($sql);
+     $stmt->execute();
+     $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
+     
+     foreach ($records as $record) {
+         echo "<option value='".$record['idOperator']."'>" . $record['idCustomer'] . "</option>";
+     }
+ }
 ?>
 
 <html>
@@ -44,7 +59,7 @@
          <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
            <script>
          $("#upload").on("click", function(e) {
-            window.location = "PilotUpload.html";
+            window.location = "PilotUpload.php";
         });
         </script>
         

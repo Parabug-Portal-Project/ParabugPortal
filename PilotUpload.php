@@ -38,7 +38,7 @@
          <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
            <script>
          $("#upload").on("click", function(e) {
-            window.location = "PilotUploadVideo.html";
+            window.location = "PilotUploadVideo.php";
         });
         </script>
     </body>

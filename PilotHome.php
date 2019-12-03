@@ -48,15 +48,15 @@
 
     <script>
         $("button.pi").on("click", function(e) {
-            window.location = "PilotInfo.html";
+            window.location = "PilotInfo.php";
         });
 
         $("button.ph").on("click", function(e) {
-            window.location = "PilotHistory.html";
+            window.location = "PilotHistory.php";
         });
         
         $("button.ps").on("click", function(e) {
-            window.location = "PilotSchedule.html";
+            window.location = "PilotSchedule.php";
         });
 
         $("button.pe").on("click", function(e) {
