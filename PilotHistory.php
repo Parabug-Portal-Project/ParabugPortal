@@ -1,20 +1,21 @@
-<?php
+// <?php
 
-include 'dbConnection.php';
-    $conn = getDatabaseConnection("heroku_68533dd666c4a97");
- { 
-     global $dbConn;
+// include 'dbConnection.php';
+//     $conn = getDatabaseConnection("heroku_68533dd666c4a97");
+//  { 
+//      global $dbConn;
      
-     $sql = "SELECT * FROM job ORDER BY date";
-     $stmt = $dbConn->prepare($sql);
-     $stmt->execute();
-     $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
+//      $sql = "SELECT * FROM job ORDER BY date";
+//      $stmt = $dbConn->prepare($sql);
+//      $stmt->execute();
+//      $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
      
-     foreach ($records as $record) {
-         echo "<option value='".$record['idOperator']."'>" . $record['idCustomer'] . "</option>";
-     }
- }
-?>
+//      foreach ($records as $record) {
+//          echo "<option value='".$record['idOperator']."'>" . $record['idCustomer'] . "</option>";
+//      }
+//  }
+// ?>
+
 
 <html>
     <head>
