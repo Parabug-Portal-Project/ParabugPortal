@@ -68,19 +68,20 @@
         
         $sql = "INSERT INTO `operator` (opUsername, opPassword, opName, opProfilepicture, opEmail, opAddress, opInsurance, opFaawaver, opLicense, opRegistration, opW9, opVendor) 
                 VALUES (:username, :password, :name, : pic, :email, :address, :insurance, :waver, :license, :registration, :w9, :vendor);";
+                
         $op = array();
-        $op[":username"] = $username;
-        $op[":password"] = $password;
-        $op[":name"] = $name;
-        $op[":pic"] = $pic;
-        $op[":email"] = $email;
-        $op[":address"] = $address;
-        $op[":insurance"] = $insurance;
-        $op[":waver"] = $waver;
-        $op[":license"] = $license;
-        $op[":registration"] = $registration;
-        $op[":w9"] = $w9;
-        $op[":vendor"] = $vendor;
+        $op[':username'] = $username;
+        $op[':password'] = $password;
+        $op[':name'] = $name;
+        $op[':pic'] = $pic;
+        $op[':email'] = $email;
+        $op[':address'] = $address;
+        $op[':insurance'] = $insurance;
+        $op[':waver'] = $waver;
+        $op[':license'] = $license;
+        $op[':registration'] = $registration;
+        $op[':w9'] = $w9;
+        $op[':vendor'] = $vendor;
         
         $stmt = $conn->prepare($sql);
         $stmt->execute($op);
