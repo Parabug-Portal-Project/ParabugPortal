@@ -51,32 +51,32 @@
     <script>
         $("#createC").on("click", function(e) {
             window.location = "createAccount.php";
-           // $.session.set('loadAccount', 'customer');
+            $.session.set('loadAccount', 'customer');
         });
 
         $("#createP").on("click", function(e) {
             window.location = "createAccount.php";
-         //  $.session.set('loadAccount', 'pilot');
+          $.session.set('loadAccount', 'pilot');
         });
         
         $("#createJ").on("click", function(e) {
             window.location = "createAccount.php";
-          //  $.session.set('loadAccount', 'job');
+           $.session.set('loadAccount', 'job');
         });
 
         $("#cInfo").on("click", function(e) {
             window.location = "information.php";
-          //   $.session.set('loadInfo', 'customer');
+            $.session.set('loadInfo', 'customer');
         });
         
         $("#pInfo").on("click", function(e) {
             window.location = ".information.php";
-          //   $.session.set('loadInfo', 'pilot');
+            $.session.set('loadInfo', 'pilot');
         });
         
         $("#jInfo").on("click", function(e) {
             window.location = "information.php";
-          //   $.session.set('loadInfo', 'job');
+             $.session.set('loadInfo', 'job');
         });
     </script>
     </body>

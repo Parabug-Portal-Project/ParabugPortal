@@ -7,32 +7,32 @@ session_start();
 validateSession();
 if (isset($_GET['addUser'])) { //checks whether the form was submitted
     
-    $username = $_GET['opUsername'];
-    $password=  $_GET['opPassword'];
-    $name =  $_GET['opName'];
-    $email = $_GET['opEmail'];
-    $address =  $_GET['opAddress']; 
-    $insurance =  $_GET['opInsurance'];
-    $waver =  $_GET['opFaawaver'];
-    $license =  $_GET['opLicense'];
-    $registration =  $_GET['opRegistration'];
-    $w9=  $_GET['opW9'];
-    $vendor=  $_GET['opVendor'];
+    $username = $_GET['username'];
+    $password=  $_GET['password'];
+    $name =  $_GET['name'];
+    $email = $_GET['email'];
+    $address =  $_GET['address']; 
+    $insurance =  $_GET['insurance'];
+    $waver =  $_GET['waver'];
+    $license =  $_GET['license'];
+    $registration =  $_GET['registration'];
+    $w9=  $_GET['w9'];
+    $vendor=  $_GET['vendor'];
     
     $sql = "INSERT INTO operator (opUsername, opPassword, opName, opEmail, opAddress, opInsurance, opFaawaver, opLicense, opRegistration, opW9, opVendor) 
-            VALUES (:opUsername, :opPassword, :opName, :opEmail, :opAddress, :opInsurance, :opFaawaver, :opLicense, :opRegistration, :opW9, :opVendor);";
+            VALUES (:username, :password, :name, :email, :address, :insurance, :waver, :license, :registration, :w9, :vendor);";
     $op = array();
-    $op[":opUsername"] = $username;
-    $op[":opPassword"] = $password;
-    $op[":opName"] = $name;
-    $op[":opEmail"] = $email;
-    $op[":opAddress"] = $address;
-    $op[":opInsurance"] = $insurance;
-    $op[":opFaawaver"] = $waver;
-    $op[":opLicense"] = $license;
-    $op[":opRegistration"] = $registration;
-    $op[":opw9"] = $w9;
-    $op[":opVendor"] = $vendor;
+    $op[":username"] = $username;
+    $op[":password"] = $password;
+    $op[":name"] = $name;
+    $op[":email"] = $email;
+    $op[":address"] = $address;
+    $op[":insurance"] = $insurance;
+    $op[":waver"] = $waver;
+    $op[":license"] = $license;
+    $op[":registration"] = $registration;
+    $op[":w9"] = $w9;
+    $op[":vendor"] = $vendor;
     
     $stmt = $dbConn->prepare($sql);
     $stmt->execute($op);
@@ -72,6 +72,5 @@ if (isset($_GET['addUser'])) { //checks whether the form was submitted
         <form>
            <input type="submit" name="addUser" value="Add User">
         </form>
-hello
     </body>
 </html>
