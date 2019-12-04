@@ -13,6 +13,7 @@ session_start();
     $port = array();
     $port[':username'] = $username;
     $port[':password'] = $password;
+    $_SESSION['adminLogged'] = NULL;
     $stmt = $conn->prepare($sql);
     $stmt->execute($port);
     $record = $stmt->fetch(PDO::FETCH_ASSOC); //we're expecting just one record
