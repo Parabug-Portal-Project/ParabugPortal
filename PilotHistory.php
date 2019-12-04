@@ -44,7 +44,7 @@
      $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
      
      foreach ($records as $record) {
-         echo "<td>".$record['joDate'] . "  " . $record['idCustomer'] . "</td>";
+         echo "<td>".$record['joDate'] . " </td><td> " . $record['idCustomer'] . "</td>";
      }
  }
 ?>
