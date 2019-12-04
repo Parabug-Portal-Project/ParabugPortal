@@ -53,21 +53,21 @@
     
     if (isset($_GET['addUser'])) { //checks whether the form was submitted
         
-        $username = $_GET['opUsername'];
-        $password=  $_GET['opPassword'];
-        $name =  $_GET['opName'];
-        $pic = $_GET['opProfilepicture'];
-        $email = $_GET['opEmail'];
-        $address =  $_GET['opAddress']; 
-        $insurance =  $_GET['opInsurance'];
-        $waver =  $_GET['opFaawaver'];
-        $license =  $_GET['opLicense'];
-        $registration =  $_GET['opRegistration'];
-        $w9=  $_GET['opW9'];
-        $vendor=  $_GET['opVendor'];
+        $username = $_GET['username'];
+        $password=  $_GET['password'];
+        $name =  $_GET['name'];
+        $pic = $_GET['pic'];
+        $email = $_GET['email'];
+        $address =  $_GET['address']; 
+        $insurance =  $_GET['insurance'];
+        $waver =  $_GET['waver'];
+        $license =  $_GET['license'];
+        $registration =  $_GET['registration'];
+        $w9=  $_GET['w9'];
+        $vendor=  $_GET['vendor'];
         
         $sql = "INSERT INTO operator ('opUsername', 'opPassword', 'opName', 'opProfilepicture', 'opEmail', 'opAddress', 'opInsurance', 'opFaawaver', 'opLicense', 'opRegistration', 'opW9', 'opVendor') 
-                VALUES (:username, :password, :name, : pic, :email, :address, :insurance, :waver, :license, :registration, :w9, :vendor);";
+                VALUES (:username, :password, :name, :pic, :email, :address, :insurance, :waver, :license, :registration, :w9, :vendor);";
                 
         $op = array();
         $op[':username'] = $username;
