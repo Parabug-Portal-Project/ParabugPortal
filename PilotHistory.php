@@ -11,7 +11,7 @@
      $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
      
      foreach ($records as $record) {
-         echo "<option value='".$record['idOperator']."'>" . $record['idCustomer'] . "</option>";
+         echo "<b>".$record['idOperator'] . $record['idCustomer'] . "</b>";
      }
  }
 ?>
