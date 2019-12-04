@@ -1,7 +1,7 @@
 <?php
 session_start();
     include 'dbConnection.php';
-    include 'adminHome.php';
+  //  include 'adminHome.php';
     $conn = getDatabaseConnection("heroku_68533dd666c4a97");
 
 validateSession();
