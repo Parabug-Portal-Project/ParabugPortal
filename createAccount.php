@@ -66,7 +66,7 @@
         $w9=  $_GET['w9'];
         $vendor=  $_GET['vendor'];
         
-        $sql = "INSERT INTO `operator` (opUsername, opPassword, opName, opProfilepicture, opEmail, opAddress, opInsurance, opFaawaver, opLicense, opRegistration, opW9, opVendor) 
+        $sql = "INSERT INTO operator ('opUsername', 'opPassword', 'opName', 'opProfilepicture', 'opEmail', 'opAddress', 'opInsurance', 'opFaawaver', 'opLicense', 'opRegistration', 'opW9', 'opVendor') 
                 VALUES (:username, :password, :name, : pic, :email, :address, :insurance, :waver, :license, :registration, :w9, :vendor);";
                 
         $op = array();
