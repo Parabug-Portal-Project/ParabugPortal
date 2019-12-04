@@ -1,20 +1,4 @@
-<?php
 
-    include 'dbConnection.php';
-    $conn = getDatabaseConnection("heroku_68533dd666c4a97");
- { 
-     global $conn;
-     
-     $sql = "SELECT * FROM job ORDER BY idOperator";
-     $stmt = $conn->prepare($sql);
-     $stmt->execute();
-     $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
-     
-     foreach ($records as $record) {
-         echo "<b>".$record['joDate'] . "  " . $record['idCustomer'] . "</b>";
-     }
- }
-?>
 
 
 <html>
@@ -45,6 +29,25 @@
     <tr>
         <td>4/23/19</td>
         <td>416 Acres</td>
+    </tr>
+    <tr>
+        <?php
+
+    include 'dbConnection.php';
+    $conn = getDatabaseConnection("heroku_68533dd666c4a97");
+ { 
+     global $conn;
+     
+     $sql = "SELECT * FROM job ORDER BY idOperator";
+     $stmt = $conn->prepare($sql);
+     $stmt->execute();
+     $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
+     
+     foreach ($records as $record) {
+         echo "<td>".$record['joDate'] . "  " . $record['idCustomer'] . "</td>";
+     }
+ }
+?>
     </tr>
 </table>
 <br>
