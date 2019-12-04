@@ -1,5 +1,7 @@
 <?php
 session_start();
+
+
  
   if(isset($_POST['login'])){
     
@@ -13,7 +15,6 @@ session_start();
     $port = array();
     $port[':username'] = $username;
     $port[':password'] = $password;
-    $_SESSION['adminLogged'] = NULL;
     $stmt = $conn->prepare($sql);
     $stmt->execute($port);
     $record = $stmt->fetch(PDO::FETCH_ASSOC); //we're expecting just one record
@@ -21,10 +22,11 @@ session_start();
     $_SESSION['wrongPass']="<div class='alert alert-danger'><strong>Password Issue! </strong>Wrong username or password!</div>"; //<div class='alert alert-danger'><strong>Password Issue! </strong>Wrong username or password!
 
     } else {
+   //Setting the session variable to make sure you no one can log in until their credentials work.
+   $_SESSION['adminLogged'] = $record['adUsername'];
    
-   //$_SESSION['adminFullName'] = $record['firstName'] .  "   "  . $record['lastName'];
-   //changed here because we are not sure why it's here.
-   header('Location: customerHome.php'); //redirects to another program
+   //Made sure to change this back to adminHome so that the user can finally login to admin.
+   header('Location: adminHome.php'); //redirects to another program
     
   }
  }

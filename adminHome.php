@@ -1,4 +1,11 @@
   <?php
+  
+  //this is to block anyone from typing the .php -Roberto
+  if(!isset( $_SESSION['adminLogged']))
+{
+  header("Location:adminLogin.php");
+}
+
 ?>
 
 <html>
@@ -42,6 +49,15 @@
  <footer class="customerFooter">
             <div class="logoutDiv">
                 <button class="plo"><strong>LOG OUT</strong></button>
+                
+               <!-- <form action="logout.php">
+                    <input type="submit"  value="Logout"/>
+                </form>
+                
+                this needs to be looked at -Roberto (needs pushing)
+                
+                -->
+                
             </div>
         </footer>
  
