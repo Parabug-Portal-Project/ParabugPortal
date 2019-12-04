@@ -72,6 +72,6 @@ if (isset($_GET['addUser'])) { //checks whether the form was submitted
         <form>
            <input type="submit" name="addUser" value="Add User">
         </form>
-
+hello
     </body>
 </html>
