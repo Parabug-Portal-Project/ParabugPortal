@@ -1,45 +1,45 @@
-// <?php
-// session_start();
-//     include 'dbConnection.php';
-//   //  include 'adminHome.php';
-//     $conn = getDatabaseConnection("heroku_68533dd666c4a97");
+<?php
+session_start();
+    include 'dbConnection.php';
+  //  include 'adminHome.php';
+    $conn = getDatabaseConnection("heroku_68533dd666c4a97");
 
-// validateSession();
-// if (isset($_GET['addUser'])) { //checks whether the form was submitted
+validateSession();
+if (isset($_GET['addUser'])) { //checks whether the form was submitted
     
-//     $username = $_GET['username'];
-//     $password=  $_GET['password'];
-//     $name =  $_GET['name'];
-//     $email = $_GET['email'];
-//     $address =  $_GET['address']; 
-//     $insurance =  $_GET['insurance'];
-//     $waver =  $_GET['waver'];
-//     $license =  $_GET['license'];
-//     $registration =  $_GET['registration'];
-//     $w9=  $_GET['w9'];
-//     $vendor=  $_GET['vendor'];
+    $username = $_GET['username'];
+    $password=  $_GET['password'];
+    $name =  $_GET['name'];
+    $email = $_GET['email'];
+    $address =  $_GET['address']; 
+    $insurance =  $_GET['insurance'];
+    $waver =  $_GET['waver'];
+    $license =  $_GET['license'];
+    $registration =  $_GET['registration'];
+    $w9=  $_GET['w9'];
+    $vendor=  $_GET['vendor'];
     
-//     $sql = "INSERT INTO operator (opUsername, opPassword, opName, opEmail, opAddress, opInsurance, opFaawaver, opLicense, opRegistration, opW9, opVendor) 
-//             VALUES (:username, :password, :name, :email, :address, :insurance, :waver, :license, :registration, :w9, :vendor);";
-//     $op = array();
-//     $op[":username"] = $username;
-//     $op[":password"] = $password;
-//     $op[":name"] = $name;
-//     $op[":email"] = $email;
-//     $op[":address"] = $address;
-//     $op[":insurance"] = $insurance;
-//     $op[":waver"] = $waver;
-//     $op[":license"] = $license;
-//     $op[":registration"] = $registration;
-//     $op[":w9"] = $w9;
-//     $op[":vendor"] = $vendor;
+    $sql = "INSERT INTO `operator` (opUsername, opPassword, opName, opEmail, opAddress, opInsurance, opFaawaver, opLicense, opRegistration, opW9, opVendor) 
+            VALUES (:username, :password, :name, :email, :address, :insurance, :waver, :license, :registration, :w9, :vendor);";
+    $op = array();
+    $op[":username"] = $username;
+    $op[":password"] = $password;
+    $op[":name"] = $name;
+    $op[":email"] = $email;
+    $op[":address"] = $address;
+    $op[":insurance"] = $insurance;
+    $op[":waver"] = $waver;
+    $op[":license"] = $license;
+    $op[":registration"] = $registration;
+    $op[":w9"] = $w9;
+    $op[":vendor"] = $vendor;
     
-//     $stmt = $dbConn->prepare($sql);
-//     $stmt->execute($op);
-//     echo "New Pilot was added!";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute($op);
+    echo "New Pilot was added!";
     
-// }
-// ?>
+}
+?>
 
 <!DOCTYPE html>
 <html>

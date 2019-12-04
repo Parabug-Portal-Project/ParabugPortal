@@ -27,9 +27,9 @@
                 
                 <tr><td class="customerMenuLayout"><button class="customerHistoryButton"><strong>HISTORY</strong></button></td></tr>
                 <tr><td class="customerMenuLayout"><button class="customerScheduleButton"><strong>SCHEDULE</strong></button></td></tr>
-                <tr><td class="customerMenuLayout"><button class="estimatorButton"><strong>ESTIMATOR</strong></button></td></tr>
-                <tr><td class="customerMenuLayout"><button class="customerFeedbackButton"><strong>FEEDBACK</strong></button></td></tr>
-                <tr><td class="customerMenuLayout"><button class="customerContactButton"><strong>CONTACT</strong></button></td></tr>
+                <!--<tr><td class="customerMenuLayout"><button class="estimatorButton"><strong>ESTIMATOR</strong></button></td></tr>-->
+                <!--<tr><td class="customerMenuLayout"><button class="customerFeedbackButton"><strong>FEEDBACK</strong></button></td></tr>-->
+                <!--<tr><td class="customerMenuLayout"><button class="customerContactButton"><strong>CONTACT</strong></button></td></tr>-->
             </table>
         </main>
 

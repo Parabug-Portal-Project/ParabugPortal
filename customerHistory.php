@@ -25,7 +25,31 @@
         </header>
     
         <main>
-            
+            <table>
+                <th>
+                    <td>
+                        <strong>DATE</strong>
+                    </td>
+                    <td>
+                        <strong>FIELD SIZE</strong>
+                    </td>
+                    <td>
+                        <strong>INSECT / MEDIA TYPE</strong>
+                    </td>
+                    <td>
+                        <strong>LOCATION</strong>
+                    </td>
+                    <td>
+                        <strong>PILOT INFO</strong>
+                    </td>
+                    <td>
+                        <strong>PICTURES</strong>
+                    </td>
+                </th>
+                <tr>
+                    <td></td>
+                </tr>
+            </table>
             
             
             
