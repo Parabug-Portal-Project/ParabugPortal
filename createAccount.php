@@ -70,7 +70,7 @@ if (isset($_GET['addUser'])) { //checks whether the form was submitted
         <form>
            Vendor: <input type="text" name="vendor"></br></br>
         <form>
-           <input type="submit" name="addUser" value="Add User">
+           <input type="submit" name="addUser" value="addUser">
         </form>
     </body>
 </html>
