@@ -13,7 +13,7 @@ if (isset($_GET['addUser'])) { //checks whether the form was submitted
   
     
     $sql = "INSERT INTO `customer` (opUsername, opPassword, opName, opEmail, opAddress) 
-            VALUES (:username, :password, :name, :email, :address, )";
+            VALUES (:username, :password, :name, :email, :address)";
     $op = array();
     $op[":username"] = $username;
     $op[":password"] = $password;
