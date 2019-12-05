@@ -12,17 +12,17 @@ if (isset($_GET['addUser'])) { //checks whether the form was submitted
     $address =  $_GET['address']; 
   
     
-    $sql = "INSERT INTO `customer` (opUsername, opPassword, opName, opEmail, opAddress) 
+    $sql = "INSERT INTO `customer` (cuUsername, cuPassword, cuName, cuEmail, cuAddress) 
             VALUES (:username, :password, :name, :email, :address)";
-    $op = array();
-    $op[":username"] = $username;
-    $op[":password"] = $password;
-    $op[":name"] = $name;
-    $op[":email"] = $email;
-    $op[":address"] = $address;
+    $cu = array();
+    $cu[":username"] = $username;
+    $cu[":password"] = $password;
+    $cu[":name"] = $name;
+    $cu[":email"] = $email;
+    $cu[":address"] = $address;
     
     $stmt = $conn->prepare($sql);
-    $stmt->execute($op);
+    $stmt->execute($cu);
     echo "New Pilot was added!";
     
 }
