@@ -50,18 +50,19 @@
 
     <script>
         $("#createC").on("click", function(e) {
-            window.location = "createAccount.php";
             $.session.set('loadAccount', 'customer');
+            window.location = "createAccount.php";
+ 
         });
 
         $("#createP").on("click", function(e) {
+            $.session.set('loadAccount', 'pilot');
             window.location = "createAccount.php";
-          $.session.set('loadAccount', 'pilot');
         });
         
         $("#createJ").on("click", function(e) {
+            $.session.set('loadAccount', 'job');
             window.location = "createAccount.php";
-           $.session.set('loadAccount', 'job');
         });
 
         $("#cInfo").on("click", function(e) {
