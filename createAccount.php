@@ -19,7 +19,7 @@ if (isset($_GET['addUser'])) { //checks whether the form was submitted
     $w9 =  $_GET['w9'];
     $vendor =  $_GET['vendor'];
     
-    $sql = "INSERT INTO operator ('opUsername', 'opPassword', 'opName', 'opProfilepicture', 'opEmail', 'opAddress', 'opInsurance', 'opFaawaver', 'opLicense', 'opRegistration', 'opW9', 'opVendor') 
+    $sql = "INSERT INTO operator (opUsername, opPassword, opName, opProfilepicture, opEmail, opAddress, opInsurance, opFaawaver, opLicense, opRegistration, opW9, opVendor) 
             VALUES (:username, :password, :name, :pic, :email, :address, :insurance, :waver, :license, :registration, :w9, :vendor)";
     $op = array();
     $op[":username"] = $username;
@@ -59,7 +59,7 @@ if (isset($_GET['addUser'])) { //checks whether the form was submitted
            Name: <input type="text" name="name"></br></br>
            Email: <input type="text" name="email"></br></br>
            Address: <input type="text" name="address"></br></br>
-           </form>
+        </form>
         <form action="/action_page.php" accept="image/png, image/jpeg">
             Profile Picture: <input type="file" name="pic" id="pic"><br>
             Insurance: <input type="file" name="insurance" id="insurance"><br>
