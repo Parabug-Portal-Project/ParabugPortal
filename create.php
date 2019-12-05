@@ -3,7 +3,7 @@ session_start();
     include 'dbConnection.php';
     $conn = getDatabaseConnection("heroku_68533dd666c4a97");
 
-
+validateSession();
 if (isset($_GET['addUser'])) { //checks whether the form was submitted
     
     $username = $_GET['username'];

@@ -5,7 +5,6 @@
     <meta charset="utf-8" />
     <title> Parabug Portal </title>
     <link href="css/styles.css" rel="stylesheet" type="text/css" /></head>
-
 <body>
     
     <header>

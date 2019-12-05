@@ -50,7 +50,6 @@
         $("button.pi").on("click", function(e) {
             window.location = "PilotInfo.php";
         });
-
         $("button.ph").on("click", function(e) {
             window.location = "PilotHistory.php";
         });
@@ -58,7 +57,6 @@
         $("button.ps").on("click", function(e) {
             window.location = "PilotSchedule.php";
         });
-
         $("button.pe").on("click", function(e) {
             window.location = "https://parabug.xyz/";
         });
