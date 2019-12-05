@@ -59,7 +59,7 @@ if (isset($_GET['addUser'])) { //checks whether the form was submitted
            Name: <input type="text" name="name"></br></br>
            Email: <input type="text" name="email"></br></br>
            Address: <input type="text" name="address"></br></br>
-        </form>
+        
         <form action="/action_page.php" accept="image/png, image/jpeg">
             Profile Picture: <input type="file" name="pic" id="pic"><br>
             Insurance: <input type="file" name="insurance" id="insurance"><br>
@@ -67,8 +67,6 @@ if (isset($_GET['addUser'])) { //checks whether the form was submitted
             License: <input type="file" name="license" id="license"><br>
             Registration: <input type="file" name="registration" id="registration"><br>
             OPW9: <input type="file" name="w9" id="w9"><br>
-            
-        </form>
         <form>
            Vendor: <input type="text" name="vendor"></br></br>
         <form>
