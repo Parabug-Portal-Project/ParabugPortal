@@ -1,9 +1,11 @@
+
 <?php
 session_start();
     include 'dbConnection.php';
     $conn = getDatabaseConnection("heroku_68533dd666c4a97");
+    
 
-if (isset($_GET['addUser'])) { //checks whether the form was submitted
+if (isset($_GET['addCustomer'])) { //checks whether the form was submitted
     
     $username = $_GET['username'];
     $password =  $_GET['password'];
@@ -26,6 +28,8 @@ if (isset($_GET['addUser'])) { //checks whether the form was submitted
     echo "New Pilot was added!";
     
 }
+
+
 ?>
 
 <!DOCTYPE html>
@@ -46,7 +50,7 @@ if (isset($_GET['addUser'])) { //checks whether the form was submitted
            Email: <input type="text" name="email"></br></br>
            Address: <input type="text" name="address"></br></br>
         <form>
-           <input type="submit" name="addUser" value="addUser">
+           <input type="submit" name="addCustomer" value="addCustomer">
         </form>
     </body>
 </html>
