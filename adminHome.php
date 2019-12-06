@@ -15,70 +15,14 @@
                 <img src="img/Parabug-Logo.png"></img>
             </div>
         </header>
-        
-
-
-
-
- <main>
-            
-            <!--Created this table to separate each button into it's own row-->
-            <table class="customerMenu">
-                <!--Ignore this-->
-                <tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
-                <tr><td class="customerMenuLayout"><button class="plo" id="createC"><strong>CREATE CUSTOMER</strong></button></td></tr>
-                <tr><td class="customerMenuLayout"><button class="plo" id="createP"><strong>CREATE PILOT</strong></button></td></tr>
-                <tr><td class="customerMenuLayout"><button class="plo" id ="createJ"><strong>CREATE JOB</strong></button></td></tr>
-                <tr><td class="customerMenuLayout"><button class="plo" id ="cInfo"><strong>CUSTOMER INFO</strong></button></td></tr>
-                <tr><td class="customerMenuLayout"><button class="plo" id="pInfo"><strong>PILOT INFO</strong></button></td></tr>
-                <tr><td class="customerMenuLayout"><button class="plo" id="jInfo"><strong>JOB INFO</strong></button></td></tr>
-                
-                <!--<tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>-->
-                <!--<tr><td class="customerMenuLayout"><button class="customerLogOutButton"><strong>LOG OUT</strong></button></td></tr>-->
-            </table>
-        </main>
-
- 
- <footer class="customerFooter">
-            <div class="logoutDiv">
-                <button class="plo"><strong>LOG OUT</strong></button>
-            </div>
-        </footer>
- 
- 
- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-
-    <script>
-        $("#createC").on("click", function(e) {
-            $.session.set('loadAccount', 'customer');
-            window.location = "createAccount.php";
- 
-        });
-
-        $("#createP").on("click", function(e) {
-            $.session.set('loadAccount', 'pilot');
-            window.location = "createAccount.php";
-        });
-        
-        $("#createJ").on("click", function(e) {
-            $.session.set('loadAccount', 'job');
-            window.location = "createAccount.php";
-        });
-
-        $("#cInfo").on("click", function(e) {
-            window.location = "information.php";
-            $.session.set('loadInfo', 'customer');
-        });
-        
-        $("#pInfo").on("click", function(e) {
-            window.location = ".information.php";
-            $.session.set('loadInfo', 'pilot');
-        });
-        
-        $("#jInfo").on("click", function(e) {
-            window.location = "information.php";
-             $.session.set('loadInfo', 'job');
-        });
-    </script>
+        <form action="createJob.php">
+              <input type="submit" value="Create Job">
+          </form>
+       <form action="createOperator.php">
+              <input type="submit" value="Create Operator">
+          </form>
+        <form action="createCustomer.php">
+              <input type="submit" value="Create Customer">
+          </form>
     </body>
 </html>
