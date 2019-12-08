@@ -16,11 +16,11 @@ if (isset($_GET['updateJob'])){  //user has submitted update form
 
     
     $sql = "UPDATE job 
-            SET date= :joDate,
-               location = :joLocation,
-               status = :joStatus,
-               customer = :idCustomer,
-               operator = :idOperator
+            SET joDate= :date,
+               joLocation = :location,
+               joStatus = :status,
+               idCustomer = :customer,
+               idOperator = :operator
             WHERE idJob = " . $_GET['idJob'];
     
     $stmt = $conn->prepare($sql);
