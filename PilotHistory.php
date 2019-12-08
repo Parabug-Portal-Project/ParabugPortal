@@ -1,5 +1,4 @@
 <?php
-
     include 'dbConnection.php';
     $conn = getDatabaseConnection("heroku_68533dd666c4a97");
  { 
@@ -11,8 +10,12 @@
      $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
      
      foreach ($records as $record) {
-         echo "<td>".$record['joDate'] . " </td><td> " . $record['idCustomer'] . "</td>";
+         echo "<td>".$record['joID'] . " </td><td>".$record['joDate'] . " </td><td> " . $record['joLocation'] . "</td> 
+         <td>".$record['joStatus'] . " </td> <td>".$record['idCustomer'] . " </td>
+         <td>".$record['idOperator'] . " </td>";
      }
+     echo "</br>";
+     echo "</br>";
  }
 ?>
 
