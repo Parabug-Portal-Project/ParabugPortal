@@ -6,24 +6,25 @@ session_start();
 
 if (isset($_GET['updateJob'])){  //user has submitted update form
     
+    
     $cu = array();
     $cu[":date"] = $_GET['date'];
     $cu[":location"] = $_GET['location'];
     $cu[":status"] = $_GET['status'];
-    $cu[":customer"] = $_GET['customer'];
     $cu[":operator"] = $_GET['operator'];
+    $cu[":customer"] = $_GET['customer'];
 
-
+    
     $sql = "UPDATE job 
-            SET joDate = :date,
-               joLocation = :location,
-               joStatus = :status,
-               idCustomer = :customer,
-               idOperator = :operator
+            SET date= :joDate,
+               location = :joLocation,
+               status = :joStatus,
+               customer = :idCustomer,
+               operator = :idOperator
             WHERE idJob = " . $_GET['idJob'];
     
-    $stmt = $conn->prepare($cu);
-    $stmt->execute($cu);   
+    $stmt = $conn->prepare($sql);
+    $stmt->execute($cu);        
 
     
 }
