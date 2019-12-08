@@ -10,7 +10,7 @@ function displayAllJobs(){
         echo "Job Date: " . $record[joDate] . "</br>";
         echo "Job Location: " . $record[joLocation] . "</br>";
         echo "<a class='btn btn-warning' role='button' href='updateJob.php?idJob=".$record['idJob']."'>Update</a>";
-        //echo "[<a href='deleteJob.php?idJob=".$record['joId']."'>Delete</a>]";
+        //echo "[<a href='deleteJob.php?=".$record['joId']."'>Delete</a>]";
         echo "<form action='deleteJob.php' onsubmit='return confirmDelete()'>";
         echo "   <input type='hidden' name='idJob' value='".$record['idJob']."'>";
         echo "   <button class='btn btn-outline-danger' type='submit'>Delete</button>";
