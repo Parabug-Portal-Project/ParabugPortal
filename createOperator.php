@@ -66,12 +66,8 @@ if (isset($_GET['addPilot'])) { //checks whether the form was submitted
             License: <input type="file" name="license" id="license"><br>
             Registration: <input type="file" name="registration" id="registration"><br>
             OPW9: <input type="file" name="w9" id="w9"><br>
-            
-        
-        <form>
-           Vendor: <input type="text" name="vendor"></br></br>
-        <form>
-           <input type="submit" name="addPilot" value="addPilot">
+            Vendor: <input type="text" name="vendor"></br></br>
+            <input type="submit" name="addPilot" value="addPilot">
         </form>
 
     </body>
