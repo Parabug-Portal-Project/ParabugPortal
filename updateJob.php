@@ -22,7 +22,7 @@ if (isset($_GET['updateJob'])){  //user has submitted update form
                idOperator = :operator
             WHERE idJob = " . $_GET['idJob'];
     
-    $stmt = $dbConn->prepare($cu);
+    $stmt = $conn->prepare($cu);
     $stmt->execute($cu);       
     
 }
