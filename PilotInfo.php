@@ -10,7 +10,7 @@
      $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
      
      foreach ($records as $record) {
-         header("Content-type: image/jpg");
+         
          echo "<td>".$record['idOperator'] . " </td><td>".$record['opProfilepicture'] . " </td><td> " . $record['opEmail'] . "</td> 
          <td>".$record['opAddress'] . " </td> <td>".$record['opInsurance'] . " </td>
          <td>".$record['opFaawaver'] . " </td><td>".$record['opLicense'] . " </td><td>".$record['opRegistration'] . " </td>
