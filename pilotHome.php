@@ -4,6 +4,9 @@
 <html>
     <head>
         <title> Parabug Home </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
           <link href="css/styles2.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
@@ -48,14 +51,14 @@
 
     <script>
         $("button.pi").on("click", function(e) {
-            window.location = "PilotInfo.php";
+            window.location = "pilotInfo.php";
         });
         $("button.ph").on("click", function(e) {
-            window.location = "PilotHistory.php";
+            window.location = "pilotHistory.php";
         });
         
         $("button.ps").on("click", function(e) {
-            window.location = "PilotSchedule.php";
+            window.location = "pilotSchedule.php";
         });
         $("button.pe").on("click", function(e) {
             window.location = "https://parabug.xyz/";
