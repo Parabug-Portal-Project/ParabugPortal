@@ -14,7 +14,7 @@ if (isset($_GET['updateJob'])){  //user has submitted update form
     $cu[":operator"] = $_GET['operator'];
 
 
-    $sql = "UPDATE oc_product 
+    $sql = "UPDATE job 
             SET joDate= :date,
                joLocation = :location,
                joStatus = :status,
