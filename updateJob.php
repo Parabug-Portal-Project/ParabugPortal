@@ -27,8 +27,8 @@ if (isset($_GET['updateJob'])){  //user has submitted update form
 
     
 }
-if (isset($_GET['jobId'])) {
-  $job = getId($_GET['jobId']);  
+if (isset($_GET['idJob'])) {
+  $joId= getId($_GET['idJob']);  
 }
 ?>
 
@@ -44,7 +44,7 @@ if (isset($_GET['jobId'])) {
         <h1> Update Job</h1>
         
         <form>
-           Job ID:<input type="hidden" name="jobId" value="<?=$job['jobId']?>">
+           <input type="hidden" name="idJob" value="<?=$joId['idJob']?>">
            Job date: <input type="text" name="date"></br></br>
            Location: <input type="text" name="location"></br></br>
            Job Status: <input type="text" name="status"></br></br>

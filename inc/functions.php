@@ -9,20 +9,20 @@ function displayAllJobs(){
     foreach ($records as $record) {
         echo "Job Date: " . $record[joDate] . "</br>";
         echo "Job Location: " . $record[joLocation] . "</br>";
-        echo "<a class='btn btn-warning' role='button' href='updateJob.php?joId=".$record['joId']."'>Update</a>";
-        //echo "[<a href='deleteJob.php?joId=".$record['joId']."'>Delete</a>]";
+        echo "<a class='btn btn-warning' role='button' href='updateJob.php?idJob=".$record['idJob']."'>Update</a>";
+        //echo "[<a href='deleteJob.php?idJob=".$record['joId']."'>Delete</a>]";
         echo "<form action='deleteJob.php' onsubmit='return confirmDelete()'>";
-        echo "   <input type='hidden' name='joId' value='".$record['joId']."'>";
+        echo "   <input type='hidden' name='idJob' value='".$record['idJob']."'>";
         echo "   <button class='btn btn-outline-danger' type='submit'>Delete</button>";
         echo "</form>";
         echo "</br></br>";
         
     }
 }
-function getId($jobId) {
+function getId($idJob) {
      global $conn;
     
-    $sql = "SELECT * FROM job WHERE jobId = $jobId";
+    $sql = "SELECT * FROM job WHERE idJob = $idJob";
     $stmt = $conn->prepare($sql);
     $stmt->execute();
     $record = $stmt->fetch(PDO::FETCH_ASSOC); 
