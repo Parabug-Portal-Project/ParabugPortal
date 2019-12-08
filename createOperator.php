@@ -51,14 +51,14 @@ if (isset($_GET['addPilot'])) { //checks whether the form was submitted
     <body>
         
         <h1> Adding New Pilot</h1>
-        
+    
         <form>
            Username: <input type="text" name="username"></br></br>
            Password: <input type="text" name="password"></br></br>
            Name: <input type="text" name="name"></br></br>
            Email: <input type="text" name="email"></br></br>
            Address: <input type="text" name="address"></br></br>
-           </form>
+        
         <form action="/action_page.php" accept="image/png, image/jpeg">
             Profile Picture: <input type="file" name="pic" id="pic"><br>
             Insurance: <input type="file" name="insurance" id="insurance"><br>
@@ -67,11 +67,12 @@ if (isset($_GET['addPilot'])) { //checks whether the form was submitted
             Registration: <input type="file" name="registration" id="registration"><br>
             OPW9: <input type="file" name="w9" id="w9"><br>
             
-        </form>
+        
         <form>
            Vendor: <input type="text" name="vendor"></br></br>
         <form>
            <input type="submit" name="addPilot" value="addPilot">
         </form>
+
     </body>
 </html>
