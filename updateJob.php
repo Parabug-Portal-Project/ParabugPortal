@@ -23,7 +23,7 @@ if (isset($_GET['updateJob'])){  //user has submitted update form
             WHERE idJob = " . $_GET['idJob'];
     
     $stmt = $dbConn->prepare($cu);
-    $stmt->execute($np);       
+    $stmt->execute($cu);       
     
 }
 ?>
