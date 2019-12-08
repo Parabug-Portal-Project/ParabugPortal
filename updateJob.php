@@ -15,7 +15,7 @@ if (isset($_GET['updateJob'])){  //user has submitted update form
 
 
     $sql = "UPDATE job 
-            SET joDate= :date,
+            SET joDate = :date,
                joLocation = :location,
                joStatus = :status,
                idCustomer = :customer,
