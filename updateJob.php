@@ -1,8 +1,8 @@
 <?php
+include 'inc/functions.php';
+include 'dbConnection.php';
+$conn = getDatabaseConnection("heroku_68533dd666c4a97");
 session_start();
-    include 'dbConnection.php';
-    $conn = getDatabaseConnection("heroku_68533dd666c4a97");
-
 
 if (isset($_GET['updateJob'])){  //user has submitted update form
     
@@ -23,8 +23,12 @@ if (isset($_GET['updateJob'])){  //user has submitted update form
             WHERE idJob = " . $_GET['idJob'];
     
     $stmt = $conn->prepare($cu);
-    $stmt->execute($cu);       
+    $stmt->execute($cu);   
+
     
+}
+if (isset($_GET['jobId'])) {
+  $job = getId($_GET['jobId']);  
 }
 ?>
 
@@ -40,7 +44,7 @@ if (isset($_GET['updateJob'])){  //user has submitted update form
         <h1> Update Job</h1>
         
         <form>
-           Job ID: <input type="text" name="idJob"></br></br>
+           Job ID:<input type="hidden" name="jobId" value="<?=$job['jobId']?>">
            Job date: <input type="text" name="date"></br></br>
            Location: <input type="text" name="location"></br></br>
            Job Status: <input type="text" name="status"></br></br>
