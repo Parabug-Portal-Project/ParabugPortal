@@ -78,7 +78,7 @@ if (isset($_GET['addPilot'])) { //checks whether the form was submitted
 
 <script type="text/javascript" src="">
     $(document).ready(function(){
-        $('#addPilot').click(function(){
+        $('#pic').click(function(){
         var imageName = $('#pic').val();
         if(imageName == '')
         {
