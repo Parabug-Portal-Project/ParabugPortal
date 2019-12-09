@@ -5,10 +5,13 @@ session_start();
 
 if (isset($_GET['addPilot'])) { //checks whether the form was submitted
     
+    $picFile = addslashes(file_get_contents($_FILES["pic"]["tmp_name"]));
+    
     $username = $_GET['username'];
     $password =  $_GET['password'];
     $name =  $_GET['name'];
-    $pic = $_GET['pic'];
+    //$pic = $_GET['pic'];
+    $pic = $picFile;
     $email = $_GET['email'];
     $address =  $_GET['address']; 
     $insurance =  $_GET['insurance'];
@@ -72,3 +75,27 @@ if (isset($_GET['addPilot'])) { //checks whether the form was submitted
 
     </body>
 </html>
+
+<script type="text/javascript" src="">
+    $(document).ready(function(){
+        $('#addPilot').click(function(){
+        var imageName = $('#pic').val();
+        if(imageName == '')
+        {
+            alert("Please Select Image");
+            return false;
+        }
+        else 
+        {
+            var extension = $('#pic').val().split('.').pop().toLocaleLowerCase();
+            if(jQuery.inArray(extension['gif','png','jpg','jpeg'])==-1){
+                alert('Invalid Image File');
+                $('#pic').val('');
+                return false;
+            }
+        }
+        });
+    });
+    
+    
+</script>
