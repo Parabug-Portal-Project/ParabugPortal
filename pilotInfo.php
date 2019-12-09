@@ -22,7 +22,7 @@
         echo '  
                           <tr>  
                                <td>  
-                                    <img src="data:image/jpeg;base64,'.base64_encode($record['opProfilepicture'] ).'" height="200" width="200" class="img-thumnail" />  
+                                    <img src="data:image/jpeg;base64,'.base64_encode($record['opProfilepicture'] ).'" height="200" width="200"/>  
                                </td>  
                           </tr>  
                      '; 
