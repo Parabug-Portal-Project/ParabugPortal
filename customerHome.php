@@ -25,11 +25,11 @@
                 <!--Ignore this-->
                 <tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
                 
-                <tr><td class="customerMenuLayout"><button class="customerHistoryButton"><strong>HISTORY</strong></button></td></tr>
-                <tr><td class="customerMenuLayout"><button class="customerScheduleButton"><strong>SCHEDULE</strong></button></td></tr>
-                <!--<tr><td class="customerMenuLayout"><button class="estimatorButton"><strong>ESTIMATOR</strong></button></td></tr>-->
+                <tr><td class="customerMenuLayout"><button class="customerHistoryButton"><strong>VIEW JOB</strong></button></td></tr>
+                <tr><td class="customerMenuLayout"><button class="completedJobButton"><strong>COMPLETED JOB</strong></button></td></tr>
                 <!--<tr><td class="customerMenuLayout"><button class="customerFeedbackButton"><strong>FEEDBACK</strong></button></td></tr>-->
-                <!--<tr><td class="customerMenuLayout"><button class="customerContactButton"><strong>CONTACT</strong></button></td></tr>-->
+                <tr><td class="customerMenuLayout"><button class="customerPilotButton"><strong>PILOT INFO</strong></button></td></tr>
+                <tr><td class="customerMenuLayout"><button class="customerScheduleButton"><strong>SCHEDULE</strong></button></td></tr>
             </table>
         </main>
 

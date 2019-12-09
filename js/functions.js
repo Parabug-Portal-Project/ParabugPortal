@@ -21,12 +21,12 @@ $(document).ready(function () {
         window.location = "customerSchedule.php";
     });
     
-    $("main .estimatorButton").on("click", function(e) {
-        window.location = "https://parabug.xyz/";
+    $("main .completedJobButton").on("click", function(e) {
+        window.location = "completedJob.php";
     });
     
-    $("main .customerFeedbackButton").on("click", function(e) {
-        window.location = "customerFeedback.php";
+    $("main .customerPilotButton").on("click", function(e) {
+        window.location = "pilotInfo.php";
     });
     
     $("main .customerContactButton").on("click", function(e) {
