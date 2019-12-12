@@ -1,3 +1,6 @@
+body{
+    font-family: Arial;
+}
 button{
     background-color: #b6d7a8; /* Green */
   border: 2px solid black;

@@ -24,7 +24,7 @@ session_start();
    
    //$_SESSION['adminFullName'] = $record['firstName'] .  "   "  . $record['lastName'];
    //changed here because we are not sure why it's here.
-   header('Location: customerHome.php'); //redirects to another program
+   header('Location: adminHome.php'); //redirects to another program
     
   }
  }
