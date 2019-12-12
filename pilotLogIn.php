@@ -9,7 +9,7 @@ session_start();
     $password = sha1($_POST['password']);
     $sql = "SELECT * FROM operator
                  WHERE opUsername = :username
-                 AND  oPpassword = :password";                 
+                 AND  opPassword = :password";                 
     $port = array();
     $port[':username'] = $username;
     $port[':password'] = $password;
