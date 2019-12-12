@@ -4,7 +4,7 @@
    <link href="css/styles2.css" rel="stylesheet" type="text/css" />
     </head>
         <body>
-            
+            <center>
             Customer History
             <br>
             <table> 
@@ -32,14 +32,12 @@
          <td>".$record['joStatus'] . " </td> <td>".$record['idCustomer'] . " </td>
          <td>".$record['idOperator'] . " </td></tr>";
      }
-    // echo "</br>";
-    // echo "</br>";
  }
 ?>
 
 </table>
 
-
+</center>
 
         </body>
 </html>
