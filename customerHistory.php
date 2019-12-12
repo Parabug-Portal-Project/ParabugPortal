@@ -1,4 +1,22 @@
-<?php
+<html>
+    <head>
+        <title> Job History </title>
+        <link href="css/styles2.css" rel="stylesheet" type="text/css" />
+    </head>
+        <body>
+            
+            Customer History
+            <br>
+            <table> 
+             <tr>
+    <th>Job Id</th>
+    <th>Job Date</th>
+    <th>Job Location</th>
+    <th> Job Status</th>
+    <th> Customer Id</th>
+    <th> Pilot Id</th>
+  </tr>
+            <?php
     include 'dbConnection.php';
     $conn = getDatabaseConnection("heroku_68533dd666c4a97");
  { 
@@ -14,18 +32,14 @@
          <td>".$record['joStatus'] . " </td> <td>".$record['idCustomer'] . " </td>
          <td>".$record['idOperator'] . " </td>";
      }
-     echo "</br>";
-     echo "</br>";
+    // echo "</br>";
+    // echo "</br>";
  }
 ?>
 
+</table>
 
-<html>
-    <head>
-        <title> Pilot Job History </title>
-        <link href="css/styles2.css" rel="stylesheet" type="text/css" />
-    </head>
-            <div class="logo">
-                <img src="img/Parabug-Logo.png"></img>
-      </div>
+
+
+        </body>
 </html>
