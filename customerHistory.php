@@ -28,7 +28,7 @@
      $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
      
      foreach ($records as $record) {
-         echo "<td>".$record['joID'] . " </td><td>".$record['joDate'] . " </td><td> " . $record['joLocation'] . "</td> 
+         echo "<td>".$record['idJob'] . " </td><td>".$record['joDate'] . " </td><td> " . $record['joLocation'] . "</td> 
          <td>".$record['joStatus'] . " </td> <td>".$record['idCustomer'] . " </td>
          <td>".$record['idOperator'] . " </td>";
      }
