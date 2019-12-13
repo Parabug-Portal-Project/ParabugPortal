@@ -31,10 +31,11 @@
                         
                         
                         foreach ($records as $record) {
-                            $status = ($record['joStatus'] == 0) ? "Not Completed" : "Completed";
+                            // Status of the Job is assigned for the table
+                            // $status = ($record['joStatus'] == 0) ? "Not Completed" : "Completed";
                             
                             echo "<tr><td>".$record['idJob'] . " </td><td>".$record['joDate'] . " </td><td> " . $record['joLocation'] . "</td> 
-                            <td>". $status . " </td><td>".$record['idOperator'] . " </td></tr>";
+                            <td>". (($record['joStatus'] == 0) ? "Not Completed" : "Completed"). " </td><td>".$record['idOperator'] . " </td></tr>";
                         }
                     }
                 ?>
