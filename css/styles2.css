@@ -54,6 +54,9 @@ th{
   color: white;
 }
 
+.flex{
+    display: flex;
+}
 
 form { text-align: center; }
 input[type=submit] {
@@ -61,7 +64,7 @@ input[type=submit] {
   color: black;
   font-family: Arial;
   padding: 14px 20px;
-  margin: 8px 0;
+  margin: 8px;
   border: none;
   font-size: 20px;
   border-radius: 4px;

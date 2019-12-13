@@ -12,18 +12,19 @@
 <br> <br>
 <intro> Admin Home</intro>
   <br> <br>
+  <div class="flex">
         <form action="createJob.php">
-              <input type="submit" value="Create Job" class="formButton">
+              <input type="submit" value="Create Job">
           </form>
           
        <form action="createOperator.php">
-              <input type="submit" value="Create Operator" class="formButton">
+              <input type="submit" value="Create Operator">
           </form>
         
         <form action="createCustomer.php">
-              <input type="submit" value="Create Customer" class="formButton">
+              <input type="submit" value="Create Customer">
           </form>
-          
+          </div>
           </center>
     </body>
 </html>
