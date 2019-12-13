@@ -37,7 +37,7 @@
                             . (($record['joStatus'] == 0) ? "Not Completed" : "Completed") . " </td><td>" . $record['opName'] . " </td></tr>";
                         }
                         
-                        echo $records;
+                        echo $print_r($records);
                     }
                 ?>
             
