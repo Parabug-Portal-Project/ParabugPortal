@@ -31,9 +31,10 @@
                         
                         
                         foreach ($records as $record) {
-                            //if ($record['joStatus'] == 0)
+                            $status = ($record['joStatus'] == 0) ? "Not Completed" : "Completed";
+                            
                             echo "<tr><td>".$record['idJob'] . " </td><td>".$record['joDate'] . " </td><td> " . $record['joLocation'] . "</td> 
-                            <td>".$record['joStatus'] . " </td><td>".$record['idOperator'] . " </td></tr>";
+                            <td>". $status . " </td><td>".$record['idOperator'] . " </td></tr>";
                         }
                     }
                 ?>

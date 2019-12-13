@@ -19,7 +19,12 @@ button, .formButton{
       height: 30%;
 }
 
-button,.formButton:hover{
+button:hover{
+  background-color: #9fc490;
+  
+}
+
+.formButton:hover{
   background-color: #9fc490;
   
 }

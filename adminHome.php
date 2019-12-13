@@ -10,8 +10,7 @@
     Admin Home
   
         <form action="createJob.php">
-              <input type="submit" value="Create Job" class="formButton
-              ">
+              <input type="submit" value="Create Job" class="formButton">
           </form>
           
        <form action="createOperator.php">
