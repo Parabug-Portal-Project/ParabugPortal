@@ -22,7 +22,7 @@
                     { 
                         global $conn;
                         
-                        echo "hello";
+                        echo "hello" . $username;
                         
                         $sql = "SELECT * FROM job";
                         $stmt = $conn->prepare($sql);
