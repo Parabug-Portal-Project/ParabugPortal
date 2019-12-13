@@ -4,9 +4,6 @@ body{
 intro{
     font-size: 60px;
 }
-form {
-  text-align: center;
-}
 button{
   background-color: #b6d7a8;
   border: 2px solid black;
@@ -58,46 +55,20 @@ th{
 }
 
 
-tab {
-  width: 100%;
-  background-color:#b6d7a8;
-  overflow: auto;
-  color: white;
-}
-
-tab {
-  float: left;
-  width: 50%;
-  text-align: center;
-  padding: 12px 0;
-  transition: all 0.3s ease;
-   color: black;
-  font-size: 20px;
- font-family: Arial;
-  font-weight: 900;
-  cursor: pointer;
-}
-
-tab:hover {
-  background-color: #000;
-  color:white;
-}
-
-.formButton {
-  float: left;
-  background-color:#b6d7a8;
-  text-align: center;
-  padding: 20px;
-  transition: all 0.3s ease;
+form { text-align: center; }
+input[type=submit] {
+  background-color: #b6d7a8;
   color: black;
+  font-family: Arial;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
   font-size: 20px;
- font-family: Arial;
-  font-weight: 900;
+  border-radius: 4px;
   cursor: pointer;
-  margin: 2px;
 }
 
-.formButton:hover {
-  background-color: #000;
-  color:white;
+input[type=submit]:hover {
+   background-color: #9fc490;
 }
+
