@@ -11,7 +11,7 @@
 <img src ="img/logo.png" class ="logo"/>
 <br> <br>
 <intro> Admin Home</intro>
-  <br>
+  <br> <br>
         <form action="createJob.php">
               <input type="submit" value="Create Job" class="formButton">
           </form>
@@ -23,5 +23,7 @@
         <form action="createCustomer.php">
               <input type="submit" value="Create Customer" class="formButton">
           </form>
+          
+          </center>
     </body>
 </html>

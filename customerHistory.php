@@ -25,7 +25,8 @@
                         
                         // Hard coded for now, hoping to show only the Jobs that have the same customer ID as
                         // the current user soon!
-                        $sql = "SELECT * FROM job WHERE idCustomer=" . 1234;
+                        // $sql = "SELECT * FROM job WHERE idCustomer=" . 1234;
+                        $sql = "SELECT * FROM job JOIN operator WHERE idCustomer=" . 1234 . "AND job.idOperator=operator.idOperator";
                         $stmt = $conn->prepare($sql);
                         $stmt->execute();
                         $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -33,7 +34,7 @@
                         
                         foreach ($records as $record) {
                             echo "<tr><td>".$record['idJob'] . "</td><td>" . $record['joDate'] . " </td><td> " . $record['joLocation'] . "</td><td>"
-                            . (($record['joStatus'] == 0) ? "Not Completed" : "Completed") . " </td><td>".$record['idOperator'] . " </td></tr>";
+                            . (($record['joStatus'] == 0) ? "Not Completed" : "Completed") . " </td><td>" . $record['idOperator'] . " </td></tr>";
                         }
                     }
                 ?>
