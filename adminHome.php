@@ -8,21 +8,18 @@
     </head>
     <body>
     Admin Home
-    <tab>
+  
         <form action="createJob.php">
-              <input type="submit" value="Create Job">
+              <input type="submit" value="Create Job" class="formButton
+              ">
           </form>
           
-          </tab>
-          <tab>
        <form action="createOperator.php">
-              <input type="submit" value="Create Operator">
+              <input type="submit" value="Create Operator" class="formButton">
           </form>
-          </tab>
-          <tab>
+        
         <form action="createCustomer.php">
-              <input type="submit" value="Create Customer">
+              <input type="submit" value="Create Customer" class="formButton">
           </form>
-          </tab>
     </body>
 </html>

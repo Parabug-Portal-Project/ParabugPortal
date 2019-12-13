@@ -12,9 +12,8 @@
                     <th>Job Id</th>
                     <th>Job Date</th>
                     <th>Job Location</th>
-                    <th> Job Status</th>
-                    <th> Customer Id</th>
-                    <th> Pilot Id</th>
+                    <th>Job Status</th>
+                    <th>Pilot Id</th>
                 </tr>
                 <?php
                     include 'dbConnection.php';
@@ -24,6 +23,7 @@
                         
                         // echo "hello" . $username;
                         
+                        // Hard coded for now, hoping to show only the Jobs that have the same customer ID
                         $sql = "SELECT * FROM job WHERE idCustomer=" . 1234;
                         $stmt = $conn->prepare($sql);
                         $stmt->execute();
@@ -31,9 +31,9 @@
                         
                         
                         foreach ($records as $record) {
+                            //if ($record['joStatus'] == 0)
                             echo "<tr><td>".$record['idJob'] . " </td><td>".$record['joDate'] . " </td><td> " . $record['joLocation'] . "</td> 
-                            <td>".$record['joStatus'] . " </td> <td>".$record['idCustomer'] . " </td>
-                            <td>".$record['idOperator'] . " </td></tr>";
+                            <td>".$record['joStatus'] . " </td><td>".$record['idOperator'] . " </td></tr>";
                         }
                     }
                 ?>

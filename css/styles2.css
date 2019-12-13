@@ -1,7 +1,7 @@
 body{
     font-family: Arial;
 }
-button{
+button, .formButton{
   background-color: #b6d7a8;
   border: 2px solid black;
 
@@ -19,7 +19,7 @@ button{
       height: 30%;
 }
 
-button:hover{
+button,.formButton:hover{
   background-color: #9fc490;
   
 }
