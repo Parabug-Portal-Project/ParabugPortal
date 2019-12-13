@@ -36,6 +36,8 @@
                             echo "<tr><td>".$record['idJob'] . "</td><td>" . $record['joDate'] . " </td><td> " . $record['joLocation'] . "</td><td>"
                             . (($record['joStatus'] == 0) ? "Not Completed" : "Completed") . " </td><td>" . $record['opName'] . " </td></tr>";
                         }
+                        
+                        echo $records;
                     }
                 ?>
             
