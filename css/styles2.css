@@ -1,6 +1,9 @@
 body{
     font-family: Arial;
 }
+intro{
+    font-size: 60px;
+}
 button{
   background-color: #b6d7a8;
   border: 2px solid black;

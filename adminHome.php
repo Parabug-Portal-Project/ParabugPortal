@@ -7,8 +7,11 @@
           <link href="css/styles2.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
-    Admin Home
-  
+<center>
+<img src ="img/logo.png" class ="logo"/>
+<br> <br>
+<intro> Admin Home</intro>
+  <br>
         <form action="createJob.php">
               <input type="submit" value="Create Job" class="formButton">
           </form>
