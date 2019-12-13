@@ -1,7 +1,7 @@
 <html>
     <head>
         <title> Job History </title>
-   <link href="css/styles2.css" rel="stylesheet" type="text/css" />
+    <link href="css/styles2.css" rel="stylesheet" type="text/css" />
     </head>
         <body>
             <center>
@@ -22,9 +22,9 @@
                     { 
                         global $conn;
                         
-                        echo "hello" . $username;
+                        // echo "hello" . $username;
                         
-                        $sql = "SELECT * FROM job";
+                        $sql = "SELECT * FROM job WHERE idCustomer=" . 1234;
                         $stmt = $conn->prepare($sql);
                         $stmt->execute();
                         $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
