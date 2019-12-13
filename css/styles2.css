@@ -4,6 +4,9 @@ body{
 intro{
     font-size: 60px;
 }
+form {
+  text-align: center;
+}
 button{
   background-color: #b6d7a8;
   border: 2px solid black;

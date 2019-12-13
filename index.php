@@ -10,9 +10,9 @@
 <img src ="img/logo.png" class ="logo"/>
 <br> <br>
 Please Log In <br>
- <button class="adminLoginButton"><strong>Admin Login In</strong></button></td>
- <button class="customerLoginButton"><strong>Customer Login In</strong></button></td>
-<button class="pilotLoginButton"><strong>Pilot Login In</strong></button></td>
+ <button class="adminLoginButton"><strong>Admin Login</strong></button></td>
+ <button class="customerLoginButton"><strong>Customer Login</strong></button></td>
+<button class="pilotLoginButton"><strong>Pilot Login</strong></button></td>
           
     </center>
 
