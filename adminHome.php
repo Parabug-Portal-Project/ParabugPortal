@@ -7,14 +7,7 @@
           <link href="css/styles2.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
-        <header>
-            <table class="menuHeader">
-                <tr><td><strong>ADMIN PORTAL</strong></td></tr>
-            </table>
-            <div class="logo">
-                <img src="img/Parabug-Logo.png"></img>
-            </div>
-        </header>
+    Admin Home
         <form action="createJob.php">
               <input type="submit" value="Create Job">
           </form>

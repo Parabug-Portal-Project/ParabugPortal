@@ -5,37 +5,40 @@
     </head>
         <body>
             <center>
-            Customer History
+            Job History
             <br>
             <table> 
-             <tr>
-    <th>Job Id</th>
-    <th>Job Date</th>
-    <th>Job Location</th>
-    <th> Job Status</th>
-    <th> Customer Id</th>
-    <th> Pilot Id</th>
-  </tr>
-            <?php
-    include 'dbConnection.php';
-    $conn = getDatabaseConnection("heroku_68533dd666c4a97");
- { 
-     global $conn;
-     
-     $sql = "SELECT * FROM job";
-     $stmt = $conn->prepare($sql);
-     $stmt->execute();
-     $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
-     
-     foreach ($records as $record) {
-         echo "<tr><td>".$record['idJob'] . " </td><td>".$record['joDate'] . " </td><td> " . $record['joLocation'] . "</td> 
-         <td>".$record['joStatus'] . " </td> <td>".$record['idCustomer'] . " </td>
-         <td>".$record['idOperator'] . " </td></tr>";
-     }
- }
-?>
-
-</table>
+                <tr>
+                    <th>Job Id</th>
+                    <th>Job Date</th>
+                    <th>Job Location</th>
+                    <th> Job Status</th>
+                    <th> Customer Id</th>
+                    <th> Pilot Id</th>
+                </tr>
+                <?php
+                    include 'dbConnection.php';
+                    $conn = getDatabaseConnection("heroku_68533dd666c4a97");
+                    { 
+                        global $conn;
+                        
+                        echo "hello";
+                        
+                        $sql = "SELECT * FROM job";
+                        $stmt = $conn->prepare($sql);
+                        $stmt->execute();
+                        $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                        
+                        
+                        foreach ($records as $record) {
+                            echo "<tr><td>".$record['idJob'] . " </td><td>".$record['joDate'] . " </td><td> " . $record['joLocation'] . "</td> 
+                            <td>".$record['joStatus'] . " </td> <td>".$record['idCustomer'] . " </td>
+                            <td>".$record['idOperator'] . " </td></tr>";
+                        }
+                    }
+                ?>
+            
+            </table>
 
 </center>
 
