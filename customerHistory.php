@@ -23,7 +23,8 @@
                         
                         // echo "hello" . $username;
                         
-                        // Hard coded for now, hoping to show only the Jobs that have the same customer ID
+                        // Hard coded for now, hoping to show only the Jobs that have the same customer ID as
+                        // the current user soon!
                         $sql = "SELECT * FROM job WHERE idCustomer=" . 1234;
                         $stmt = $conn->prepare($sql);
                         $stmt->execute();
@@ -31,11 +32,8 @@
                         
                         
                         foreach ($records as $record) {
-                            // Status of the Job is assigned for the table
-                            // $status = ($record['joStatus'] == 0) ? "Not Completed" : "Completed";
-                            
-                            echo "<tr><td>".$record['idJob'] . " </td><td>".$record['joDate'] . " </td><td> " . $record['joLocation'] . "</td> 
-                            <td>". (($record['joStatus'] == 0) ? "Not Completed" : "Completed"). " </td><td>".$record['idOperator'] . " </td></tr>";
+                            echo "<tr><td>".$record['idJob'] . "</td><td>" . $record['joDate'] . " </td><td> " . $record['joLocation'] . "</td><td>"
+                            . (($record['joStatus'] == 0) ? "Not Completed" : "Completed") . " </td><td>".$record['idOperator'] . " </td></tr>";
                         }
                     }
                 ?>
