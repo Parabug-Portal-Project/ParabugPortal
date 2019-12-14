@@ -25,8 +25,8 @@
               <input type="submit" value="Create Customer">
           </form>
         
-        <form action="updateJob.php">
-              <input type="submit" value="Update Job">
+        <form action="jobHistory.php">
+              <input type="submit" value="Job History">
           </form>          
           </div>
           </center>
