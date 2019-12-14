@@ -13,22 +13,22 @@
          
     //  <img src="data:image/jpeg;base64,'.base64_encode($row['name'] ).'" height="200" width="200" class="img-thumnail" />  
          
-        //  echo "<td>".$record['idOperator'] . " </td><td>".$record['opProfilepicture'] . " </td><td> " . $record['opEmail'] . "</td> 
-        //  <td>".$record['opAddress'] . " </td> <td>".$record['opInsurance'] . " </td>
-        //  <td>".$record['opFaawaver'] . " </td><td>".$record['opLicense'] . " </td><td>".$record['opRegistration'] . " </td>
-        //  <td>".$record['opW9'] . " </td><td>".$record['opVendor'] . " </td>";
+         echo "<td>".$record['idOperator'] . " </td><td>".$record['opProfilepicture'] . " </td><td> " . $record['opEmail'] . "</td> 
+         <td>".$record['opAddress'] . " </td> <td>".$record['opInsurance'] . " </td>
+         <td>".$record['opFaawaver'] . " </td><td>".$record['opLicense'] . " </td><td>".$record['opRegistration'] . " </td>
+         <td>".$record['opW9'] . " </td><td>".$record['opVendor'] . " </td>";
         
-        echo $record['opProfilepicture'];
-        echo '  
-                          <tr>  
-                               <td>  
-                                    <img src="data:image/jpeg;base64,'.base64_encode($record['opProfilepicture'] ).'" height="200" width="200"/>  
-                               </td>  
-                          </tr>  
-                     '; 
-     }
-     echo "</br>";
-     echo "</br>";
+    //     echo $record['opProfilepicture'];
+    //     echo '  
+    //                       <tr>  
+    //                           <td>  
+    //                                 <img src="data:image/jpeg;base64,'.base64_encode($record['opProfilepicture'] ).'" height="200" width="200"/>  
+    //                           </td>  
+    //                       </tr>  
+    //                  '; 
+    //  }
+    //  echo "</br>";
+      echo "</br>";
  }
 ?>
 

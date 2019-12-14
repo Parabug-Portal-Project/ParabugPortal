@@ -24,6 +24,10 @@
         <form action="createCustomer.php">
               <input type="submit" value="Create Customer">
           </form>
+        
+        <form action="updateJob.php">
+              <input type="submit" value="Update Job">
+          </form>          
           </div>
           </center>
     </body>
