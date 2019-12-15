@@ -90,8 +90,9 @@ input[type=submit]:hover {
 }
 #para{
   display: inline-block;
+  word-wrap: break-word;
   text-align: center;
-  width: 200px;
+  width: 100px;
   height: 50px;
   border: 15px solid orange;
   padding: 50px;
