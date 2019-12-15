@@ -2,6 +2,9 @@ body{
     font-family: Arial;
     background-image:url("parabug.jpg");
 }
+h1{
+  background-color: #a5ca95;
+}
 intro{
     font-size: 60px;
 }
