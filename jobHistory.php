@@ -24,6 +24,11 @@ include 'inc/functions.php';
             }
             
         </script>
+        <style>
+            div {    
+                  background-image: url('img/parabug.jpg');
+                }
+        </style>
     
     </head>
     <body id= "adminBody">
