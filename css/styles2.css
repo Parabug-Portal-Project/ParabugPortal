@@ -89,8 +89,13 @@ input[type=submit]:hover {
    background-color: #9fc490;
 }
 #para{
+  text-align: center;
   width: 300px;
   border: 15px solid orange;
   padding: 50px;
   margin: 20px;
+}
+
+.paraWrap{
+  text-align: center;
 }
