@@ -6,8 +6,8 @@ body{
 
 }
 header{
-  background-color: black;
-  color: white;
+
+  color: black;
   text-align: center;
 }
 intro{
@@ -49,13 +49,13 @@ table {
 }
 
 td, th {
-  border: 1px solid #ddd;
+  border: 1px solid #FF8C00;
   padding: 8px;
 }
 
 tr{
   background-color:#DCDCDC;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 tr:hover {background-color: #ddd;}

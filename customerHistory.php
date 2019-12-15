@@ -6,6 +6,7 @@
 
     </head>
     <header>
+        <h1>Parabug</h1>
         <h1>Job History</h1>
       
         </header>
