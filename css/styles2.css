@@ -7,7 +7,6 @@ body{
 }
 h1{
   text-align: center;
-  display: inline-block;
 }
 header{
 
@@ -92,17 +91,18 @@ input[type=submit] {
 input[type=submit]:hover {
    background-color: #9fc490;
 }
-#para{
-  display: inline-block;
-  word-wrap: normal;
-  text-align: center;
-  width: 100px;
-  height: 50px;
-  border: 15px solid orange;
-  padding: 50px;
-  margin: 20px;
-}
-
-.paraWrap{
-  display: inline-block;
+/*#para{*/
+/*  display: inline-block;*/
+/*  word-wrap: normal;*/
+/*  text-align: center;*/
+/*  width: 100px;*/
+/*  height: 50px;*/
+/*  border: 15px solid orange;*/
+/*  padding: 50px;*/
+/*  margin: 20px;*/
+/*}*/
+.one{
+    border-style: solid;
+    border-width: 5px;
+    border-color: orange;
 }
