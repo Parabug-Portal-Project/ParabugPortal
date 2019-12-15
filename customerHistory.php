@@ -6,7 +6,9 @@
 
     </head>
     <header>
-        <h1>Job History</br></h1>
+        <h1>Job History</h1>
+        <br>
+        
         </header>
     <div>
         <body>
