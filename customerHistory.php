@@ -5,6 +5,7 @@
     <link href="css/styles2.css" rel="stylesheet" type="text/css" />
 
     </head>
+    <div>
         <body>
             <center>
             Job History
@@ -46,4 +47,5 @@
 </center>
 
         </body>
+        </div>
 </html>
