@@ -6,13 +6,14 @@
 
     </head>
     <header>
-        <center>
+
         <h1>Job History</h1>
-        <br>
+
         
         </header>
     <div>
         <body>
+            <center>
             
             <br>
             <br>
