@@ -5,10 +5,12 @@
     <link href="css/styles2.css" rel="stylesheet" type="text/css" />
 
     </head>
+    <header>
+        <h1>Job History</br></h1>
+        </header>
     <div>
         <body>
             <center>
-            <h1>Job History</h1>
             <br>
             <br>
             <br><br>
