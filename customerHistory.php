@@ -8,15 +8,17 @@
     <div>
         <body>
             <center>
-            Job History
+            <h1>Job History</h1>
             <br>
+            <br>
+            <br><br><br>
             <table> 
                 <tr>
                     <th>Job Id</th>
                     <th>Job Date</th>
                     <th>Job Location</th>
                     <th>Job Status</th>
-                    <th>Pilot Name</th>
+                    <th>Pilot Id</th>
                 </tr>
                 <?php
                     include 'dbConnection.php';
