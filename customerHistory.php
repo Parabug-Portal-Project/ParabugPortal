@@ -1,9 +1,5 @@
 <html>
-        <style>
-            div {    
-                  background-image: url('img/parabug.jpg');
-                }
-        </style>
+
     <head>
         <title> Job History </title>
     <link href="css/styles2.css" rel="stylesheet" type="text/css" />

@@ -1,6 +1,9 @@
 body{
     font-family: Arial;
 }
+div{    
+    background-image: url('img/parabug.jpg');
+}
 intro{
     font-size: 60px;
 }
