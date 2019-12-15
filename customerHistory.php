@@ -3,10 +3,19 @@
     <head>
         <title> Job History </title>
     <link href="css/styles2.css" rel="stylesheet" type="text/css" />
+<style> 
 
+#para{
+      box-sizing: border-box;
+      width: 300px;
+      height: 100px;
+      padding: 30px;  
+      border: 10px #FF8C00;
+}
+</style>
     </head>
     <header>
-        <h1>PARABUG JOB HISTORY</h1>
+       <div id="para">PARABUG JOB HISTORY</div>
        
       
         </header>
