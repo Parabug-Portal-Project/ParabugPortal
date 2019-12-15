@@ -6,15 +6,11 @@
 
 
     </head>
-    <header>
-       <div id="para">PARABUG JOB HISTORY</div>
-       
-      
-        </header>
+
     <div>
         <body>
             <center>
-            
+            <div id="para"><h1>PARABUG JOB HISTORY</h1></div>
             <br><br>
             <table> 
                 <tr>
