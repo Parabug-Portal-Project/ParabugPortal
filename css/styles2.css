@@ -5,7 +5,9 @@ body{
     background-size: cover;
 
 }
-
+h1{
+  background-color: black;
+}
 intro{
     font-size: 60px;
 }
@@ -50,7 +52,8 @@ td, th {
 }
 
 tr{
-  background-color: white;
+  background-color:#DCDCDC;
+  opacity: 0.5;
 }
 
 tr:hover {background-color: #ddd;}
