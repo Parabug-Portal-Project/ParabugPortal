@@ -7,8 +7,11 @@
 
     </head>
     <header>
-       <div id="para"><h1>PARABUG JOB HISTORY</h1></div>
-       
+        <div class = "paraWrap">
+           <div id="para">
+                   <h1>PARABUG JOB HISTORY</h1
+            </div>
+       </div>
       
         </header>
     <div>
