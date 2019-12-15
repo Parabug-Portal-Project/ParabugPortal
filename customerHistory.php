@@ -6,10 +6,8 @@
 
     </head>
     <header>
-
         <h1>Job History</h1>
-
-        
+      
         </header>
     <div>
         <body>
