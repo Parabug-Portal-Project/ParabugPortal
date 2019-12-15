@@ -54,7 +54,7 @@ td, th {
 
 tr{
   background-color:#DCDCDC;
-  opacity: 0.7;
+  /*opacity: 0.7;*/
 }
 
 tr:hover {background-color: #ddd;}
