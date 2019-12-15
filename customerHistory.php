@@ -8,7 +8,7 @@
     <div>
         <body>
             <center>
-            <h1>Job History</h1>
+            <!--<h1>Job History</h1>-->
             <br>
             <br>
             <br>

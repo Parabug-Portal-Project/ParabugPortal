@@ -2,10 +2,10 @@ body{
     font-family: Arial;
     background-image:url("parabug.jpg");
     background-repeat: no-repeat, repeat;
+    background-size: cover;
+
 }
-h1{
-  background-color: #a5ca95;
-}
+
 intro{
     font-size: 60px;
 }
@@ -41,6 +41,7 @@ table {
   font-family: Arial;
   border-collapse: collapse;
   width: 80%;
+  
 }
 
 td, th {
@@ -48,7 +49,9 @@ td, th {
   padding: 8px;
 }
 
-
+tr{
+  background-color: white;
+}
 
 tr:hover {background-color: #ddd;}
 
@@ -56,7 +59,7 @@ th{
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #a5ca95;
+  background-color: black;
   color: white;
 }
 
