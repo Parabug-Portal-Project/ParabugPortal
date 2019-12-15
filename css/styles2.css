@@ -9,7 +9,6 @@ header{
 
   color: black;
   text-align: center;
-  font-family: Arial Hebrew;
 }
 intro{
     font-size: 60px;
@@ -89,4 +88,10 @@ input[type=submit] {
 input[type=submit]:hover {
    background-color: #9fc490;
 }
-
+#para{
+      box-sizing: border-box;
+      width: 300px;
+      height: 100px;
+      padding: 30px;  
+      border: 10px #FF8C00;
+}
