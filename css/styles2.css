@@ -97,5 +97,5 @@ input[type=submit]:hover {
 }
 
 .paraWrap{
-  text-align: center;
+  display: inline-block;
 }
