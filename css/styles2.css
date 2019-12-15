@@ -5,6 +5,10 @@ body{
     background-size: cover;
 
 }
+h1{
+  text-align: center;
+  display: inline-block;
+}
 header{
 
   color: black;
@@ -90,7 +94,7 @@ input[type=submit]:hover {
 }
 #para{
   display: inline-block;
-  word-wrap: break-word;
+  word-wrap: normal;
   text-align: center;
   width: 100px;
   height: 50px;
