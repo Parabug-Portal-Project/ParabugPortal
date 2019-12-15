@@ -13,8 +13,6 @@
         <body>
             <center>
             
-            <br>
-            <br>
             <br><br>
             <table> 
                 <tr>
@@ -34,7 +32,7 @@
                         
                         // Hard coded for now, hoping to show only the Jobs that have the same customer ID as
                         // the current user soon!
-                        $sql = "SELECT * FROM job WHERE idCustomer=" . 1234;
+                        $sql = "SELECT * FROM job";
                         // $sql = "SELECT * FROM job JOIN operator WHERE idCustomer=" . 1234;
                         $stmt = $conn->prepare($sql);
                         $stmt->execute();
