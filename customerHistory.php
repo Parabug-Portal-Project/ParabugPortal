@@ -9,7 +9,7 @@
     <header>
         <div class = "paraWrap">
            <div id="para">
-                   <h1>PARABUG JOB HISTORY</h1
+                   <h1>PARABUG JOB HISTORY</h1>
             </div>
        </div>
       
