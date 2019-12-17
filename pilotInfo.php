@@ -28,7 +28,7 @@
     //                  '; 
     //  }
     //  echo "</br>";
-      echo "</br>";
+    }
  }
 ?>
 
@@ -38,7 +38,8 @@
         <title> Pilot Job Info </title>
         <link href="css/styles2.css" rel="stylesheet" type="text/css" />
     </head>
-            <div class="logo">
-                <img src="img/Parabug-Logo.png"></img>
-      </div>
+    
+    <div class="logo">
+        <img src="img/Parabug-Logo.png"></img>
+    </div>
 </html>
