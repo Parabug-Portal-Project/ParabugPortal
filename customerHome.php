@@ -3,41 +3,37 @@
     <head>
         <meta charset="utf-8" />
         <title> Parabug Portal </title>
-        <link href="css/styles.css" rel="stylesheet" type="text/css" />
+        <link href="css/styles2.css" rel="stylesheet" type="text/css" />
     </head>
     
     <body>
 
         <header>
             <table class="menuHeader">
-                <tr><td><strong>Customer Portal</strong></td></tr>
-                <!--Ignore this-->
             </table>
             <br/> <br/>
-            <div class="logo">
-                <img src="img/Parabug-Logo.png"></img>
-            </div>
+    
         </header>
         
-         <main>
-            <!--Created this table to separate each button into it's own row-->
-            <table class="customerMenu">
-                <!--Ignore this-->
-                <tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
-                
-                <tr><td class="customerMenuLayout"><button class="customerHistoryButton"><strong>VIEW JOB</strong></button></td></tr>
-                <tr><td class="customerMenuLayout"><button class="completedJobButton"><strong>COMPLETED JOB</strong></button></td></tr>
-                <!--<tr><td class="customerMenuLayout"><button class="customerFeedbackButton"><strong>FEEDBACK</strong></button></td></tr>-->
-                <tr><td class="customerMenuLayout"><button class="customerPilotButton"><strong>PILOT INFO</strong></button></td></tr>
-                <tr><td class="customerMenuLayout"><button class="customerScheduleButton"><strong>SCHEDULE</strong></button></td></tr>
-            </table>
-        </main>
+     
+        <div class="flex">
+             <form action="customerHistory.php">
+                 <input type="submit" value="Customer History"/>
+             </form>
+             
+             <form action="pilotInfo.php">
+                 <input type="submit" value="Pilot Info"/>
+             </form>
+             
+             <form>
+                 <input type="submit" value="Scheduler"/>
+             </form>
+        </div>
+     
+        <!--<button class="customerHistoryButton"><strong>VIEW JOB</strong></button></td></tr>-->
+        <!--<button class="customerPilotButton"><strong>PILOT INFO</strong></button></td></tr>-->
+        <!--<button class="customerScheduleButton"><strong>SCHEDULE</strong></button></td></tr>-->
 
- 
-         <footer class="customerFooter">
-            <br>
-            <button class="customerLogOutButton"><strong>LOG OUT</strong></button>
-        </footer>
     
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="js/functions.js"></script>

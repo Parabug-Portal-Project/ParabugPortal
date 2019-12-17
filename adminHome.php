@@ -10,7 +10,7 @@
 <center>
 <img src ="img/logo.png" class ="logo"/>
 <br> <br>
-<intro> Admin Home</intro>
+<div class="one"> Admin Home</div>
   <br> <br>
   <div class="flex">
         <form action="createJob.php">
