@@ -3,7 +3,7 @@ body{
     background-image:url("parabug.png");
     background-repeat: no-repeat, repeat;
     background-size: cover;
-
+    text-align: center;
 }
 h1{
   text-align: center;
@@ -98,5 +98,4 @@ input[type=submit]:hover {
     border-color: orange;
     word-wrap: break-word;
     width: 100px;
-    text-align: center;
 }
