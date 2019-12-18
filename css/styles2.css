@@ -89,7 +89,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-   background-color: #9fc490;
+   background-color: gray;
 }
 
 .one{
@@ -98,4 +98,5 @@ input[type=submit]:hover {
     border-color: orange;
     word-wrap: break-word;
     width: 100px;
+    text-align: center;
 }
