@@ -36,6 +36,8 @@ if (isset($_GET['addCustomer'])) { //checks whether the form was submitted
 <html>
     <head>
         <title> Admin Section: Add New Pilot </title>
+        <link href="css/styles2.css" rel="stylesheet" type="text/css" />
+
     </head>
 
 

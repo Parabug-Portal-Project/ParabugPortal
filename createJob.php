@@ -32,12 +32,13 @@ if (isset($_GET['addJob'])) { //checks whether the form was submitted
 <html>
     <head>
         <title> Admin Section: Add New Pilot </title>
+        <link href="css/styles2.css" rel="stylesheet" type="text/css" />
     </head>
 
 
     <body>
         
-        <h1> Adding Customer</h1>
+        <h1> Adding New Job</h1>
         
         <form>
            Job date: <input type="text" name="date"></br></br>
