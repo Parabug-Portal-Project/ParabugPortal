@@ -12,8 +12,8 @@ include 'inc/functions.php';
         <title> Job History </title>
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" type="text/css" />
-                  <link href="css/styles2.css" rel="stylesheet" type="text/css" />
-
+        <link href="css/styles2.css" rel="stylesheet" type="text/css" />  
+       
         <script>
         
             function confirmDelete() {
