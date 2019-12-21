@@ -98,4 +98,6 @@ input[type=submit]:hover {
     border-color: orange;
     word-wrap: break-word;
     width: 100px;
+    margin-left: auto;
+    margin-right: auto;
 }

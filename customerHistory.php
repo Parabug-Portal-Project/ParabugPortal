@@ -12,7 +12,7 @@
            <!-- </div>-->
             <div class= "one">
                 <h1>PARABUG JOB HISTORY</h1>
-                </div>
+            </div>
         </header>
     <div>
         <body>
